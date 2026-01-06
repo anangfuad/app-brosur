@@ -158,8 +158,9 @@ def dalil_detail(dalil_id: int):
         raise HTTPException(status_code=404, detail="Dalil tidak ditemukan")
 
     # 🔥 FIX UTAMA PATH (ANTI WINDOWS / LINUX ERROR)
-    rel_path = row["html_path"].lstrip("/\\")
-    html_path = os.path.abspath(os.path.join(BASE_DIR, rel_path))
+    rel_path = row["html_path"].replace("\\", "/").lstrip("/")
+html_path = os.path.abspath(os.path.join(BASE_DIR, rel_path))
+
 
     # log untuk Railway (aman)
     print("BASE_DIR :", BASE_DIR)
