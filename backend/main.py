@@ -8,15 +8,16 @@ import os
 # =========================
 # APP
 # =========================
-app = FastAPI(title="App Brosur v0.4")
+app = FastAPI(title="App Brosur v1.0")
 
 # =========================
-# BASE PATH (AMAN LINTAS OS)
+# BASE DIR
+# (root project, tempat dalil.db & chm_extracted)
 # =========================
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # =========================
-# STATIC FILES
+# STATIC FILES (frontend)
 # =========================
 STATIC_DIR = os.path.join(BASE_DIR, "backend", "static")
 
@@ -27,7 +28,6 @@ if os.path.isdir(STATIC_DIR):
         name="static"
     )
 else:
-    # optional log biar nggak crash di production
     print(f"[WARN] Static directory not found: {STATIC_DIR}")
 
 # =========================
@@ -57,7 +57,7 @@ def get_conn():
 # =========================
 @app.get("/")
 def root():
-    return {"status": "ok", "version": "v0.4"}
+    return {"status": "ok", "version": "v1.0"}
 
 
 # =========================
@@ -88,7 +88,7 @@ def make_snippet(text: str, keywords, radius=150):
 
 
 # =========================
-# 🔍 SEARCH (isi terjemah)
+# 🔍 SEARCH (isi terjemah Indonesia)
 # =========================
 @app.get("/search/indo")
 def search_indo(q: str = Query(..., min_length=2)):
@@ -133,14 +133,14 @@ def search_indo(q: str = Query(..., min_length=2)):
     return results[:20]
 
 
-# alias kompatibilitas
+# alias kompatibilitas lama
 @app.get("/search")
 def search_alias(q: str = Query(..., min_length=2)):
     return search_indo(q)
 
 
 # =========================
-# 📄 DETAIL DALIL (HTML ASLI)
+# 📄 DETAIL DALIL (HTML ASLI CHM)
 # =========================
 @app.get("/dalil/{dalil_id}")
 def dalil_detail(dalil_id: int):
@@ -157,12 +157,21 @@ def dalil_detail(dalil_id: int):
     if not row or not row["html_path"]:
         raise HTTPException(status_code=404, detail="Dalil tidak ditemukan")
 
-    html_path = os.path.join(BASE_DIR, row["html_path"])
+    # 🔥 FIX UTAMA PATH (ANTI WINDOWS / LINUX ERROR)
+    rel_path = row["html_path"].lstrip("/\\")
+    html_path = os.path.abspath(os.path.join(BASE_DIR, rel_path))
 
-    if not os.path.exists(html_path):
-        raise HTTPException(status_code=404, detail="File HTML tidak ditemukan")
+    # log untuk Railway (aman)
+    print("BASE_DIR :", BASE_DIR)
+    print("HTML PATH:", html_path)
 
-    # Baca binary (AMAN encoding Arab)
+    if not os.path.isfile(html_path):
+        raise HTTPException(
+            status_code=404,
+            detail=f"File HTML tidak ditemukan: {rel_path}"
+        )
+
+    # BACA BINARY (AMAN ARAB)
     with open(html_path, "rb") as f:
         content = f.read()
 
