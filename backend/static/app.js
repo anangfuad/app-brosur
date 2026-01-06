@@ -1,7 +1,7 @@
 // =========================
 // GLOBAL STATE
 // =========================
-const API = "http://127.0.0.1:8000";
+const API = ""; // 🔥 PENTING: relative path
 
 let timer = null;
 let lastKeyword = "";
@@ -36,30 +36,36 @@ async function cari() {
   lastKeyword = q;
   hasilDiv.innerHTML = "Mencari…";
 
-  const res = await fetch(`${API}/search/indo?q=${encodeURIComponent(q)}`);
-  if (!res.ok) {
+  try {
+    const res = await fetch(`${API}/search/indo?q=${encodeURIComponent(q)}`);
+
+    if (!res.ok) throw new Error("API error");
+
+    const data = await res.json();
+
+    if (data.length === 0) {
+      hasilDiv.innerHTML = "<p>Tidak ditemukan.</p>";
+      return;
+    }
+
+    hasilDiv.innerHTML = data
+      .map(
+        (item) => `
+        <div class="card">
+          <h3>${item.judul || "Tanpa Judul"}</h3>
+          <div class="tahun">Tahun: ${item.tahun || "-"}</div>
+          <p>${highlight(item.preview, q)}</p>
+          <button onclick="bukaDetail(${item.id})">
+            Lihat selengkapnya
+          </button>
+        </div>
+      `
+      )
+      .join("");
+  } catch (err) {
+    console.error(err);
     hasilDiv.innerHTML = "Gagal mengambil data";
-    return;
   }
-
-  const data = await res.json();
-  if (data.length === 0) {
-    hasilDiv.innerHTML = "<p>Tidak ditemukan.</p>";
-    return;
-  }
-
-  hasilDiv.innerHTML = data
-    .map(
-      (item) => `
-      <div class="card">
-        <h3>${item.judul || "Tanpa Judul"}</h3>
-        <div class="tahun">Tahun: ${item.tahun || "-"}</div>
-        <p>${highlight(item.preview, q)}</p>
-        <button onclick="bukaDetail(${item.id})">Lihat selengkapnya</button>
-      </div>
-    `
-    )
-    .join("");
 }
 
 // =========================
@@ -101,7 +107,7 @@ function highlightInIframe(keyword) {
     highlights = [];
     activeIndex = -1;
 
-    // 🔥 Inject CSS ke iframe (FIX UTAMA)
+    // Inject CSS
     const style = doc.createElement("style");
     style.innerHTML = `
       mark.hl {
@@ -118,12 +124,7 @@ function highlightInIframe(keyword) {
     const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const regex = new RegExp(`(${escaped})`, "gi");
 
-    const walker = doc.createTreeWalker(
-      doc.body,
-      NodeFilter.SHOW_TEXT,
-      null,
-      false
-    );
+    const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
 
     const nodes = [];
     let node;
