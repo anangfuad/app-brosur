@@ -12,12 +12,12 @@ app = FastAPI(title="App Brosur v1.0")
 
 # =========================
 # BASE DIR
-# (root project, tempat dalil.db & chm_extracted)
+# Root project (/app di Railway)
 # =========================
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # =========================
-# STATIC FILES (frontend)
+# STATIC FILES (Frontend)
 # =========================
 STATIC_DIR = os.path.join(BASE_DIR, "backend", "static")
 
@@ -133,7 +133,7 @@ def search_indo(q: str = Query(..., min_length=2)):
     return results[:20]
 
 
-# alias kompatibilitas lama
+# alias kompatibilitas
 @app.get("/search")
 def search_alias(q: str = Query(..., min_length=2)):
     return search_indo(q)
@@ -157,12 +157,11 @@ def dalil_detail(dalil_id: int):
     if not row or not row["html_path"]:
         raise HTTPException(status_code=404, detail="Dalil tidak ditemukan")
 
-    # 🔥 FIX UTAMA PATH (ANTI WINDOWS / LINUX ERROR)
+    # 🔥 FIX UTAMA: normalisasi path Windows → Linux
     rel_path = row["html_path"].replace("\\", "/").lstrip("/")
-html_path = os.path.abspath(os.path.join(BASE_DIR, rel_path))
+    html_path = os.path.abspath(os.path.join(BASE_DIR, rel_path))
 
-
-    # log untuk Railway (aman)
+    # log debug (muncul di Railway)
     print("BASE_DIR :", BASE_DIR)
     print("HTML PATH:", html_path)
 
@@ -172,7 +171,7 @@ html_path = os.path.abspath(os.path.join(BASE_DIR, rel_path))
             detail=f"File HTML tidak ditemukan: {rel_path}"
         )
 
-    # BACA BINARY (AMAN ARAB)
+    # baca binary (AMAN encoding Arab)
     with open(html_path, "rb") as f:
         content = f.read()
 
