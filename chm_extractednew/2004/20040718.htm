@@ -1,0 +1,838 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;
+	mso-endnote-numbering-style:alpha-lower;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: center"><span style="FONT-SIZE:
+ 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-no-proof: yes"></span><span
+ lang=IN style="FONT-SIZE: 10.5pt">
+  </span><span lang=IN style="FONT-SIZE: 10.5pt">Ahad, 18 Juli
+2004/30 Jumadil ula 1425<span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Brosur no. : 1233/1273/SI
+
+  </span></p>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+
+ embed; DIRECTION: ltr; TEXT-ALIGN: center; MARGIN: 12pt 0cm 6pt"><span lang=IN style="FONT-SIZE: 18pt; FONT-FAMILY:
+
+ 'Times New Roman','serif'; mso-ascii-theme-font: minor-bidi; mso-hansi-theme-font: minor-bidi; mso-bidi-theme-font: minor-bidi">Tarikh Nabi Muhammad SAW (ke-131)</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Tidak
+ada hijrah sesudah Fathu Makkah</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Bukhari
+meriwayatkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَبِى
+عُثْمَانَ
+حَدَّثَنِى
+مُجَاشِعٌ،
+قَالَ:
+اَتَيْتُ النَّبِيَّ
+ص بِاَخِى
+بَعْدَ
+اْلفَتْحِ،
+قُلْتُ: يَا
+رَسُوْلَ
+اللهِ،
+جِئْتُكَ
+بِاَخِى لِتُبَايِعَهُ
+عَلَى
+اْلهِجْرَةِ.
+قَالَ: ذَهَبَ
+اَهْلُ
+اْلهِجْرَةِ
+بِمَا
+فِيْهَا. فَقُلْتُ:
+عَلَى اَيّ
+شَيْءٍ
+تُبَايِعُهُ؟
+قَالَ:
+اُبَايِعُهُ
+عَلَى
+اْلاِسْلاَمِ
+وَاْلاِيْمَانِ
+وَاْلجِهَادِ.
+فَلَقِيْتُ
+اَبَا
+مَعْبَدٍ بَعْدُ:
+وَ كَانَ
+اَكْبَرُهُمَا
+فَسَاَلْتُهُ
+فَقَالَ:
+صَدَقَ
+مُجَاشِعٌ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 97</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+Abu 'Utsman, ia berkata : Telah menceritakan kepadaku Mujasyi', ia berkata :
+Saya datang kepada Nabi SAW dengan saudara laki-laki saya setelah Fathu Makkah,
+lalu saya berkata, "Ya Rasulullah, saya datang kepada engkau dengan
+saudara laki-laki saya agar engkau membai'atnya atas hijrah". Beliau
+bersabda, "Orang-orang yang hijrah telah pergi dengan apa yang ada di dalamnya".
+Lalu saya bertanya, "Atas sesuatu apa engkau membai'atnya ?". Beliau
+bersabda, "Aku akan membai'atnya atas Islam, iman dan jihad". Lalu
+sesudah itu saya (Abu 'Utsman) bertemu Ma'bad, ia adalah yang lebih tua
+diantara keduanya. Saya bertanya kepadanya, lalu ia menjawab, "Mujasyi'
+benar"</span></i><span lang=IN>. [HR. Bukhari juz 5, hal. 97]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اِبِى
+عُثْمَانَ
+النَّهْدِيّ
+عَنْ مُجَاشِعٍ
+بْنِ
+مَسْعُوْدٍ
+اِنْطَلَقْتُ
+بِاَبِى
+مَعْبَدٍ
+اِلىَ
+النَّبِيّ ص
+لِيُبَايِعَهُ
+عَلَى
+اْلهِجْرَةِ.
+قَالَ: مَضَتِ
+اْلهِجْرَةُ
+ِلاَهْلِهَا،
+اُبَايِعُهُ
+عَلَى
+اْلاِسْلاَمِ
+وَ
+اْلجِهَادِ.
+فَلَقِيْتُ اَبَا
+مَعْبَدٍ
+فَسَأَلْتُهُ
+فَقَالَ: صَدَقَ
+مُجَاشِعٌ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 97</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+Abu 'Utsman An-Nahdiy, dari Mujasyi' bin Mas'ud, ia berkata : Saya pergi dengan
+Abu Ma'bad kepada Nabi SAW agar beliau membai'atnya atas hijrah. Beliau
+bersabda, "Hijrah telah berlalu bagi orang-orang yang (mengikuti)nya,
+tetapi aku akan membai'atnya atas Islam dan jihad". Lalu saya (Abu
+'Utsman) bertemu Abu Ma'bad, saya bertanya kepadanya, lalu ia menjawab,
+"Mujasyi' benar"</span></i><span lang=IN>. [HR. Bukhari juz 5, hal.
+97]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+عَطَاءِ بْنِ
+اَبِى
+رَبَاحٍ
+قَالَ: زُرْتُ
+عَائِشَةَ
+مَعَ
+عُبَيْدِ
+بْنِ عُمَيْرٍ
+فَسَأَلَهَا
+عَنِ
+اْلهِجْرَةِ.
+فَقَالَتْ:
+لاَ هِجْرَةَ
+اْليَوْمَ،
+كَانَ
+اْلمُؤْمِنُ
+يَفِرُّ
+اَحَدُهُمْ
+بِدِيْنِهِ
+اِلىَ اللهِ
+وَ اِلىَ
+رَسُوْلِهِ ص
+مَخَافَةَ
+اَنْ يُفْتَنَ
+عَلَيْهِ.
+فَاَمَّا
+اْليَوْمَ فَقَدْ
+اَظْهَرَ
+اللهُ
+اْلاِسْلاَمَ.
+فَاْلمُؤْمِنُ
+يَعْبُدُ
+رَبَّهُ
+حَيْثُ
+شَاءَ، وَ ل?كِنْ
+جِهَادٌ وَ
+نِيَّةٌ</span><span lang=AR-SA
+ style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 98</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+'Atha' bin Abu Rabah, ia berkata : Saya berkunjung kepada 'Aisyah bersama
+'Ubaid bin 'Umair. Ia bertanya kepada 'Aisyah tentang hijrah, lalu dia
+menjawab, "Sekarang ini tidak ada lagi hijrah. Dahulu seorang mukmin lari
+dengan membawa agamanya kepada Allah dan Rasul-Nya, karena takut mendapat
+fitnah (gangguan). Adapun saat ini, Allah telah memberi kemenangan kepada agama
+Islam. Seorang mukmin dapat menyembah Tuhannya dimana pun ia kehendaki, tetapi
+(sekarang ini yang ada) adalah jihad dan niat"</span></i><span lang=IN>.
+[HR. Bukhari juz 5, hal. 98]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Penghancuran
+behala-berhala</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sesudah
+kota Makkah jatuh ke tangan kekuasaan Nabi SAW, dan segenap penduduknya telah
+tunduk di bawah pemerintahan Islam, maka sebelum Nabi SAW dan kaum muslimin
+kembali ke Madinah, beliau mengerahkan tiga pasukan muslimin ke tempat-tempat
+penyembahan berhala atau sumber-sumber kemusyrikan yang ada di sekeliling kota
+Makkah, untuk menghancurkan patung-patung berhala yang terbesar dan yang
+dipandang paling sakti di sekitar kota Makkah tersebut. Tiga pasukan itu
+dipimpin oleh Khalid bin Walid, 'Amr bin 'Ash dan Sa'ad bin Zaid.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Pasukan
+yang dipimpin oleh Khalid bin Walid</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Pasukan
+ini terdiri dari tiga puluh orang tentara berkuda, dikerahkan ke dusun Nakhlah
+untuk menghancurkan patung berhala 'Uzza. Berhala 'Uzza ini adalah sebuah
+berhala yang dipuja dan dimuliakan oleh orang-orang 'Arab terutama oleh suku
+Quraisy Kinanah dan Mudlar. Berhala 'Uzza tersebut dibuatkan sebuah rumah dan
+ada penjaga dan juru kuncinya dari kaum banu Syaiban dari banu Sulaim.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Shahabat
+Khalid bin Walid bersama tiga puluh orang tentara muslimin setelah sampai di
+dusun tersebut lalu bergerak meruntuhkan rumah berhala 'Uzza yang terkenal itu.
+Setelah selesai meruntuhkan berhala itu lalu mereka kembali ke Makkah. Setiba
+di Makkah mereka segera melaporkan kepada Nabi SAW bahwa patung berhala 'Uzza
+telah dihancurkan. Setelah mendengar laporan Khalid bin Walid itu lalu Nabi SAW
+bertanya : </span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">مَا
+رَأَيْتَ؟</span><span
+ dir=ltr></span><span lang=IN><span dir=ltr></span><span
+ style="mso-spacerun: yes">&nbsp; </span><i>"Apakah yang kamu lihat (ketika
+kamu meruntuhkannya) ?"</i>. Khalid menjawab : </span><span lang=AR-SA
+ dir=rtl style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">لَمْ
+أَرَ شَيْئًا</span><span
+ dir=ltr></span><span lang=IN><span dir=ltr></span> "<i>Aku tidak melihat
+sesuatupun</i>". Maka Rasulullah SAW menyuruhnya supaya kembali.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Khalid segera kembali bersama tentaranya, dan sesampai di tempat berhala 'Uzza
+tadi lalu segera menghancurkannya. Ketika pasukan Khalid menghancurkan berhala
+'Uzza tersebut, tiba-tiba dari dalam rumah berhala itu keluar perempuan hitam,
+telanjang bulat dan rambutnya kusut dan berdebu.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+dengan cepat Khalid bin Walid membunuhnya dengan pedang, sehingga binasalah ia.
+Kemudian Khalid mengucapkan :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="TEXT-ALIGN: center"><span
+ lang=AR-SA style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">يَا
+عُزَّى
+كُفْرَانَكِ
+لاَ
+سُبْحَانَكِ،
+اِنّى
+رَأَيْتُ
+اللهَ قَدْ
+اَهَانَكِ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Hai
+'Uzza, aku tidak percaya kepadamu serta tidak mensucikan kamu ! Sesungguhnya
+aku mengetahui bahwa Allah telah menghinakan kamu</span></i><span lang=IN>.
+[Al-Bidayah wan Nihayah juz 4, hal. 712]</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Pasukan
+yang dipimpin oleh 'Amr bin Al-'Ash</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Pasukan
+ini dikerahkan oleh Nabi SAW ke sebuah dusun yang benama Ruhath, yang jauhnya
+kira-kira lima kilometer dari Makkah, untuk menghancurkan berhala Suwa'.
+Menurut riwayat, berhala Suwa' ini adalah berhala yang dipuja dan disembah oleh
+kaum nabi Nuh, lalu dibawa ke tanah 'Arab dan disembah oleh bangsa 'Arab,
+terutama oleh kaum banu Hudzail. Dan Suwa' itulah sebesar-besar berhala yang
+dipuja oleh kaum banu Hudzail di masa itu.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>'Amr
+bin Al-'Ash bersama pasukan muslimin setelah sampai ke tempat yang dituju lalu
+mendekati behala yang dianggap sakti oleh kebanyakan kaum musyrikin itu, lalu
+menghancurkannya. Dengan demikian berhala Suwa' yang dianggap sakti dan keramat
+itu telah hancur, dan juru kuncinya seketika itu masuk Islam.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Pasukan
+yang dimpimpin Sa'ad bin Zaid</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Pasukan
+ini terdiri dari dua puluh orang tentara berkuda dikerahkan oleh Nabi SAW untuk
+berangkat menuju ke dusun Musyallal untuk menghancurkan berhala yang disebut
+Manaat. Berhala Manaat ini adalah sebuah berhala yang dipuja dan disembah di
+masa jahiliyah oleh kaum Aus dan Khazraj, dan lain-lain suku bangsa 'Arab yang
+beragama seperti mereka.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+pasukan ini tiba di tempat yang dituju, pasukan Sa'ad bin Zaid segera mendekati
+berhala Manaat yang tekenal sakti dan keramat itu kemudian menghancurkannya. Setelah
+menyelesaikan tugasnya itu Sa'ad bin Zaid beserta pasukannya segera kembali ke
+Makkah dengan selamat.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Tentara
+Islam dikirim ke banu Jadzimah</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sekembali
+shahabat Khalid bin Walid dari menyelesaikan tugas menghancurkan patung berhala
+'Uzza sebagaimana tersebut di atas, lalu Nabi SAW memerintahkan supaya
+berangkat memimpin satu pasukan tentara Islam sebanyak 350 orang yang terdiri
+dari kaum Muhajirin dan Anshar serta kaum banu Sulaim, menuju ke tempat kaum
+banu Jadzimah. Nabi SAW memerintahkan kepada Khalid bin Walid supaya menyerukan
+Islam kepada mereka.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Khalid
+bin Walid bersama tentaranya sebanyak 350 orang berangkat dari Makkah dan terus
+menuju ke kabilah banu Jadzimah. Setelah banu Jadzimah mengetahui bahwa Khalid
+bin Walid bersama pasukannya dan banu Sulaim menuju ke kabilah mereka, lalu
+mereka bersiap-siap dengan senjata lengkap untuk melawan Khalid bin Walid dan
+pasukannya.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+pasukan Khalid bin Walid tiba di kabilah mereka, lalu Khalid berkata :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: center"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">ضَعُوا
+السّلاَحَ
+فَاِنَّ
+النَّاسَ
+قَدْ اَسْلَمُوْا</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البداية و
+النهاية 4: 708</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Letakkanlah
+senjata kalian, sungguh orang-orang sudah masuk Islam</span></i><span lang=IN>.
+[Al-Bidayah wan Nihayah juz 4, hal. 708]</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Mereka
+masing-masing lalu meletakkan senjata mereka. Dan ketika itu ada seorang dari
+banu Jadzimah yang bernama Jahdam berkata kepada kawannya :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">وَيْلَكُمْ
+يَا بَنِى
+جَذِيْمَةَ،
+اِنَّهُ
+خَالِدٌ، وَ
+اللهِ مَا
+بَعْدَ
+وَضْعِ السّلاَحِ
+اِلاَّ
+اْلاَسَارَ
+وَ مَا بَعْدَ
+اْلاَسَارِ
+اِلاَّ
+ضَرْبَ
+اْلاَعْنَاقِ،
+وَ اللهِ لاَ
+اَضَعُ
+سِلاَحِى
+اَبَدًا</span><span lang=AR-SA
+ style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البداية و
+النهاية 4: 708</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Celaka
+kalian hai banu Jadzimah, sesungguhnya dia adalah Khalid. Demi Allah, tidaklah
+setelah kalian meletakkan senjata kecuali pasti kalian ditawan. Dan tidaklah
+setelah ditawan, kecuali pasti akan dipenggal leher kalian. Demi Allah, aku
+tidak akan meletakkan senjataku selamanya</span></i><span lang=IN>. [Al-Bidayah
+wan Nihayah juz 4, hal. 708]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+mendengar perkataan Jahdam itu, lalu orang-orang banu Jadzimah menangkapnya dan
+berkata :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">يَا
+جَحْدَمُ، اَ
+تُرِيْدُ
+اَنْ
+تَسْفِكَ دِمَاءَنَا؟
+اِنَّ
+النَّاسَ
+قَدْ
+اَسْلَمُوْا
+وَ وُضِعَتِ
+اْلحَرْبُ وَ
+ا?مَنَ
+النَّاسُ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البداية و
+النهاية 4: 708</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Hai
+Jahdam, apakah kamu akan menumpahkan darah kami, padahal orang-orang telah
+masuk Islam, dan peperangan telah dihentikan dan orang-orang telah beriman
+?"</span></i><span lang=IN>. [Al-Bidayah wan Nihayah juz 4, hal. 708]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+mereka melucuti senjata Jahdam. Dengan singkat banu Jadzimah telah meletakkan
+senjata mereka karena thaat pada perkataan Khalid, tetapi setelah itu Khalid
+bin Walid memerintahkan tentaranya supaya menawan mereka, yang akhirya mereka
+semua ditawan.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Khalid bin Walid memerintahkan kepada segenap pasukannya, bahwa barangsiapa
+yang mempunyai tawanan hendaklah tawanan itu dibunuh. Dan perintah itupun
+dilaksanakna juga oleh sebagian pasukannya. Tetapi tidak semuanya mengikuti
+perintah itu, dan sebagian lagi tidak mau menthaati perintah Khalid tersebut,
+mereka masing-masing melepas tawanan yang di tangan mereka.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+diantara mereka itu ada yang melarikan diri, datang kepada Rasulullah SAW
+melaporkan peristiwa tersebut. Setelah Rasulullah SAW mengetahui hal tersebut,
+lalu seketika itu beliau mengangkat kedua tangannya dan menengadahkan ke langit
+berdoa kepada Allah :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: center"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اَللّهُمَّ
+اِنّى
+اَبْرَأَ
+اِلَيْكَ
+مِمَّا
+صَنَعَ
+خَالِدُ بْنُ
+اْلوَلِيْدِ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Ya
+Allah, sesungguhnya aku serahkan kepada Engkau dari apa yang telah diperbuat
+Khalid bin Walid</span></i><span lang=IN>. [Al-Bidayah wan Nihayah juz 4, hal.
+709]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Bukhari
+meriwayatkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+سَالِمٍ عَنْ
+اَبِيْهِ
+قَالَ: بَعَثَ
+النَّبِيُّ ص
+خَالِدَ بْنَ
+اْلوَلِيْدِ
+اِلىَ بَنِى
+جَذِيْمَةَ
+فَدَعَا هُمْ
+اِلىَ اْلاِسْلاَمِ
+فَلَمْ
+يُحْسِنُوْا
+اَنْ
+يَقُوْلُوْا
+اَسْلَمْنَا
+فَجَعَلُوْا
+يَقُوْلُوْنَ:
+صَبَأْنَا صَبَأْنَا.
+فَجَعَلَ
+خَالِدٌ
+يَقْتُلُ مِنْهُمْ
+وَ يَأْسِرُ
+وَ دَفَعَ
+اِلىَ كُلّ
+رَجُلٍ
+مِنَّا
+أَسِيْرَهُ
+حَتَّى اِذَا
+كَانَ يَوْمٌ
+اَمَرَ
+خَالِدٌ اَنْ
+يَقْتُلَ
+كُلُّ رَجُلٍ
+مِنَّا
+أَسِيْرَهُ
+فَقُلْتُ: وَ
+اللهِ لاَ
+اَقْتُلُ
+أَسِيْرِى،
+وَ لاَ
+يَقْتُلُ
+رَجُلٌ مِنْ اَصْحَابِى
+اَسِيْرَهُ
+حَتَّى
+قَدِمْنَا عَلَى
+النَّبِيّ ص
+فَذَكَرْنَاهُ
+لَهُ فَرَفَعَ
+النَّبِيُّ ص
+يَدَهُ
+فَقَالَ:
+اَللّهُمَّ
+اِنّى
+اَبْرَأَ
+اِلَيْكَ
+مِمَّا صَنَعَ
+خَالِدٌ مَرَّتَيْنِ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 107</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+Salim dari bapaknya, ia berkata : Nabi SAW mengutus Khalid bin Walid ke banu
+Jadzimah. Ia mengajak mereka masuk Islam, lalu mereka tidak mengatakan,
+"Kami masuk Islam", tetapi mereka berkata, "Kami berganti agama,
+kami berganti agama" (maksud mereka : Kami mau menerima Islam). Lalu
+Khalid membunuh sebagian diantara mereka dan menawannya, dan ia menyerahkan
+tawanan kepada setiap orang diantara kami. Sehingga pada suatu hari Khalid
+menyuruh setiap orang diantara kami untuk membunuh tawanannya. Maka saya
+berkata, "Demi Allah, saya tidak akan membunuh tawananku, dan tidak ada
+seorangpun diantara teman-temanku yang membunuh tawanannya, sehingga kami
+datang kepada Nabi SAW. Lalu kami menceritakan hal itu kepada beliau. Kemudian
+beliau mengangkat kedua tangannya dan berdoa, "Ya Allah, sesungguhnya aku
+berlepas diri kepada-Mu dari apa yang telah diperbuat Khalid". Beliau
+berdoa demikian dua kali</span></i><span lang=IN>. [HR. Bukhari juz 5, hal.
+107]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Nabi SAW memerintah 'Ali bin Abu Thalib supaya ke tempat peristiwa itu, supaya
+menyelidiki segala sesuatu yang telah dilakukan Khalid. 'Ali lalu berangkat ke
+kabilah banu Jadzimah, dan setiba di sana lalu menyelidiki apa yang telah
+diperbuat Khalid.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+mendapat beberapa keterangan yang jelas dan bukti yang nyata, lalu ia menebus
+atau mengganti dengan harta kepada orang-orang yang keluarganya atau saudaranya
+telah dibunuh dan harta benda atau haq milik mereka yang telah dirusakkan oleh
+sebagian pasukan tersebut. Setelah semuanya dilunasi satu-persatu lalu 'Ali
+menanyakan, "Apakah masih ada darah atau harta benda yang belum kami ganti
+?".</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+mendapat jawaban, "Tidak ada", maka 'Ali pun lalu memberikan sisa
+harta yang dibawanya dari Nabi SAW kepada segenap kaum banu Jadzimah. Yang
+demikian itu sekedar untuk menjaga kalau masih ada diantara mereka yang
+terlewat belum diganti atau diberi tebusan yang tidak mereka ketahui.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Selanjutnya
+'Ali RA kembali ke Makkah, dan setiba di Makkah segera melaporkan segala
+sesuatu yang telah terjadi tersebut. Setelah menerima laporan dari 'Ali RA itu,
+Nabi SAW bersabda :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: center"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اَصَبْتَ
+وَ
+اَحْسَنْتَ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Kamu
+telah berbuat benar, dan kamu telah berbuat baik</span></i><span lang=IN>.
+[Al-Bidayah wan Nihayah juz 4, hal. 709]</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Rasulullah SAW berdiri menghadap qiblat mengangkat kedua tangannya, sehingga terlihat
+ketiaknya, beliau berdoa :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: center"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اَللّهُمَّ
+اِنّى
+اَبْرَأَ
+اِلَيْكَ
+مِمَّا
+صَنَعَ
+خَالِدُ بْنُ
+اْلوَلِيْدِ
+ثَلاَثَ
+مَرَّاتٍ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>"Ya
+Allah, sesungguhnya aku serahkan kepada Engkau dari apa yang telah diperbuat
+Khalid bin Walid". Beliau berdoa demikian tiga kali</span></i><span
+ lang=IN>. [Al-Bidayah wan Nihayah juz 4, hal. 709]</span><span lang=AR-SA
+ dir=rtl style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: right"><span lang=IN>Bersambung......... </span><span
+ lang=IN style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt"></span></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>

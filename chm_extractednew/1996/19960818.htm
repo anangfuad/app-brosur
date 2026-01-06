@@ -1,0 +1,905 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"DecoType Naskh";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"DecoType Naskh";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Comment Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"DecoType Naskh";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 240.95pt right 453.55pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:10.0pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Comment Text";
+	font-family:"DecoType Naskh";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"DecoType Naskh";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"DecoType Naskh";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-bidi-font-family:"Traditional Arabic";}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoBodyText><span style="mso-no-proof: yes"></span>Ahad, 18 Agustus 1996/3 Rabiul Akhir 1417<span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Brosur No. : 842/882/AS</p>
+
+<p class=MsoNormal align=center style="TEXT-ALIGN:
+ center; MARGIN: 6pt 0cm 12pt"><span style="FONT-SIZE:
+
+ 14pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Wajib Tha'at
+Kepada Allah dan Rasul-Nya (ke-19)</span></p>
+
+<p class=MsoNormal align=center style="MARGIN-BOTTOM: 6pt; TEXT-ALIGN: center"><span
+
+ style  
+="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; TEXT-TRANSFORM: uppercase; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-bidi-font-weight: bold; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-style: italic">Al-Ijma'
+Dasar Hukum yang Ketiga Dalam Islam</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">1. Arti Ijma' :</span></i></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Ijma'
+menurut bahasa, artinya : <b><i>sepakat, setuju atau sependapat</i></b>, sedang
+menurut istilah, ialah :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">اِتِّـفَاقُ
+مُجْتَهِدِى
+اُمَّةِ
+مُحَمَّدٍ ص
+بَعْدَ
+وَفَاتِهِ
+فِى عَصْرٍ
+مِنَ اْلأَعْصَارِ
+عَلَى أَمْرٍ
+مِنَ
+اْلأُمُوْرِ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Kebulatan pendapat semua ahli
+ijtihad ummat Muhammad, sesudah wafatnya pada suatu masa, tentang suatu perkara
+(hukum)</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">2. Dari Segi Masanya,</span></i></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari
+segi masanya, maka Ijma' dapat dibagi menjadi dua :</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">1.
+Zaman Khalifah yang empat, dan</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">2. Zaman sesudahnya.</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; tab-stops: 21.3pt"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">(1)<span style="mso-tab-count: 1">&nbsp;&nbsp; </span>Ijma'
+shahabat (yang dimaksud ialah zaman Khalifah Abu Bakar, 'Umar, 'Utsman dan
+Ali). Ijma' mereka ini jelas dapat dijadikan hujjah tanpa diperselisihkan orang
+lagi, sebab NabiSAW. sendiri memerintahkan sebagaimana sabdanya:</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">عَلَيْكُمْ
+بِسُنَّتِى
+وَسُنَّةِ
+اْلخُـلَـفَاءِ
+الرَّاشِدِيْـنَ.
+ابو داود
+وغيره.</span><span dir=ltr style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Hendaklah kamu berpegang kepada
+cara-caraku dan cara-cara khulafaur Rasyidin</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [Abu Dawud dan
+lain-lain]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; tab-stops: 21.3pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">(2)<span
+ style="mso-tab-count: 1">&nbsp;&nbsp; </span>Ijma' ulama pada zaman sesudah
+Khulafaur Rasyidin, yaitu tatkala Islam telah meluas dan para fuqaha shahabat
+banyak pindah ke negeri Islam yang baru dan telah timbul fuqaha tabi'in yang
+tidak sedikit, ditambah lagi dengan pertentangan politik. Maka pada zaman
+inilah sukar dibayangkan dapat terjadinya ijma'.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Kalau sampai zaman
+tabi'in saja, sudah sukar akan terjadi ijma', maka lebih-lebih zaman sekarang
+dimana para ulama telah tersebar luas ke seluruh pelosok. Sedang sahnya ijma'
+ialah : "<i>Kebulatan pendapat semua ahli ijtihad</i>".</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Oleh sebab itu ijma' yang diakui dan
+dibenarkan oleh para ulama, ialah ijma' para shahabat Nabi; dan selain dari itu
+tidaklah mungkin, bahkan mustahil terjadi. Di antara para ulama mujtahidin
+besar yang mengingkari (tidak membenarkan) adanya ijma' di masa sesudah para
+shahabat Nabi, ialah Imam Ahmad bin Hanbal (pemuka madzhab Hanbali) yang hidup
+di antara pertengahan abad kedua dan pertengahan abad ketiga Hijrah. Antara
+lain beliau berkata :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">مَنِ
+ادَّعَى
+اْلإِجْمَاعَ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>فَهُوَ كَاذِبٌ.
+لَعَلَّ
+النَّاسَ
+قَدِ
+اخْتَـلَـفُوْا،
+وَلكِنْ
+يَـقُوْلُ:
+لاَ نَعْلَمُ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>النَّاسَ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>اِخْتَـلَـفُوْا.
+اِذْ لَمْ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>يَـبْلُغْهُ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Barangsiapa yang mendakwakan ijma',
+maka ia berdusta. Barangkali manusia telah berselisih, tetapi - cukuplah ia
+berkata: Kami tidak mengetahui orang-orang yang mereka itu berselisih, karena
+belum sampai -berita- kepadanya</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Jelasnya :
+Barangsiapa yang mendakwakan (menganggap) telah terjadi ijma' sesudah para
+shahabat, maka ia berdusta. Mungkin orang-orang berselisih, tetapi ia tidak
+mengetahui adanya perselisihan itu, karena beritanya belum sampai kepadanya.
+Oleh sebab itu, maka hendaklah ia berkata: "<i>Aku tidak mengetahui ada
+orang yang menyalahi dan menyelisihi tentang pendapat ini</i>".</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Imam Ahmad bin
+Hanbal berpendapat, bahwa kemungkinan ada terjadi ijma' sesudah masa para
+shahabat itu adalah mustahil, karena para ulama Islam telah bertebaran ke
+seluruh pelosok. Mengihimpunkan mereka untuk mengadakan ijma' di satu kota bukan
+perkara yang mudah dan ringan, tetapi boleh dikatakan mustahil. Dan memang
+selama ini belum pernah terdengar berita atau riwayat yang menyatakan, bahwa
+para 'ulama Islam di masa sesudah para shahabat seluruhnya pernah berkumpul di
+satu kota untuk mengadakan ijma' (kata sepakat) terhadap suatu hukum atas suatu
+masalah.</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Imam
+Al-Ashfahani berkata :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">وَالْمُنْصِفُ
+يَعْلَمُ
+اَنـَّهُ<span
+ style="mso-spacerun: yes">&nbsp; </span>لاَ
+خَبَرَ لَهُ
+مِنَ
+اْلإِجْمَاعِ<span
+ style="mso-spacerun: yes">&nbsp; </span>اِلاَّ
+مَا يَجـِدُ
+مَكْـتُوْبــًا
+فِى الْكُـتُبِ.
+وَ مِنَ
+اْلبَـيِّنِ
+اَنـَّهُ لاَ
+يَحْصُلُ
+اْلاِطْلاَعُ
+عَلَيْهِ
+اِلاَّ
+بِالسِّمَاعِ
+مِنْهُمْ
+اَوْ
+بِنَقْلِ
+اَهْلِ الـتَّـوَاتُـرِ
+اِلَـيْنَـا.
+وَلاَ
+سِبِـيْلَ اِلَى
+ذلِكَ اِلاَّ
+فِىْ عَصْرِ
+الصَّحَابَةِ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>وَاَمَّا
+بَـعْـدَهُمْ
+فَلاَ.</span><span dir=ltr style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan orang yang insaf tentu mengerti,
+bahwa sesungguhnya tidak ada berita padanya daripada ~berita~ ijma', melainkan
+apa yang ia dapati tertulis di kitab-kitab ~saja~. Padahal jelas, bahwa tidak
+akan berhasil mengetahui atas ijma' itu, melainkan dengan pendengaran daripada
+mereka (para ulama) atau dengan berita riwayat yang mutawatir sampainya kepada
+kita. Dan tidak ada jalan kepada yang demikian itu melainkan di masa shahabat;
+adapun sesudah mereka itu, maka tidak akan ada</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Jelasnya : Tentang
+ijma' itu tidak akan dapat dihasilkan (diperoleh dengan sempurna), melainkan dengan
+pendengaran dari para 'ulama ahli ijtihad atau dengan berita mutawatir yang
+sampai kepada kita. Hal tersebut tidak mungkin terjadi, melainkan pada masa
+shahabat. Dan juga Imam Al-Ashfahani menyatakan : "<i>Amat sukar kita
+mengetahui ada terjadi ijma', selain daripada ijma' shahabat yang masih sedikit
+jumlah orang yang dipandang ahli ijma'. Keadaan yang demikian itu yang
+memungkinkan mereka berkumpul guna memberikan persetujuan kepada suatu pendapat
+orang lain. Mereka masih sedikit jumlahnya dan masih tinggal setempat
+(tempat-tempat yang berdekatan)"</i>.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Selanjutnya beliau
+menyatakan : "<i>Adapun sekarang sesudah tersiar Islam di seluruh pelosok
+dan sesudah banyak bilangan 'ulama, tidaklah mungkin lagi diyakini akan
+terjadinya ijma' diantara mereka itu</i>".</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Imam
+Ar-Razi, seorang ulama ahli ushul dan ahli tafsir yang terkenal berkata :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">وَاْلاِنْصَافُ
+اَنــَّهُ
+لاَ طَرِيْقَ
+لَنَا اِلَى
+مَعْرِفَتِهِ
+اِلاَّ فِى
+زَمَانِ
+الصَّحَابَةِ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan sebenarnya, bahwasanya tidak ada
+jalan bagi kita kepada mengetahuinya (ijma'), melainkan di masa shahabat</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Jelas kiranya,
+bahwa kemungkinan ada ijma' sesudah masa para shahabat Nabi itu <b><i>tidak ada
+dan tidak pernah terjadi</i></b>. Oleh sebab itu, ijma' yang mu'tabar, ijma'
+yang tidak diperselisihkan lagi adanya, dan yang dapat dipergunakan sebagai
+hujjah (alasan) dalam agama, ialah ijma' para shahabat.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan dengan ini
+tepatlah apa yang pernah dikemukakan oleh Imam Ahmad bin Hanbal dan para ulama
+lainnya yang tidak membenarkan adanya ijma' dimasa <i>sesudah masa para
+shahabat Nabi</i>.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">3. Kehujjahan Ijma'.</span></i></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Para ulama
+menetapkan bahwa ijma' itu hujjah dan sebagai dasar hukum syari'at dalam Islam.
+Tetapi ijma' itu berkedudukan di bawah Al-Qur'an dan As-Sunnah, serta tidak
+boleh menyalahi nash yang qath'i (keterangan yang tegas-jelas) dari Al-Qur'an
+dan Sunnah Rasul yang masyhur.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Imam Asy-Syafi'i
+dalam menjelaskan tentang "ijma'" dalam kitabnya Ar-Risalah
+menetapkan, bahwa ijma' itu hujjah; dan beliau memandangnya sebagai hujjah
+dengan sendirinya di tempat yang tidak didapati nash dari Kitab dan Sunnah.
+Selanjutnya beliau menetapkan pula, bahwa tidak akan menjadi ijma', melainkan
+yang telah disepakati oleh segenap 'ulama Islam.</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Adapun alasan-alasan yang
+dipergunakan untuk menetapkan, adanya ijma' oleh para 'ulama yang menetapkan
+bahwa ijma' itu hujjah yang ditaati dan sebagai dasar syari'at, di antaranya
+sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">يـاَ
+يُّـهَا
+الَّذِيْـنَ
+امَنُوْا
+اَطِيْعُوا
+اللهَ وَ
+اَطِيْعُوا
+الرَّسُوْلَ
+وَ اُولى<span
+ style="mso-spacerun: yes">&nbsp;
+</span>اْلاَمْرِ
+مِنْكُمْ
+فَإِنْ تَنَازَعْتُمْ
+فِى شَيْءٍ
+فَرُدُّوْهُ<span
+ style="mso-spacerun: yes">&nbsp; </span>اِلَى
+اللهِ وَ
+الرَّسُوْلِ
+اِنْ كُـنْـتُمْ
+تُـؤْمِنُوْنَ
+بِاللهِ
+وَاْلـيَوْمِ
+اْلآخِرِ،
+ذلِكَ خَيْرٌ
+وَّ اَحْسَنُ
+تَـأْوِيْلاً.
+النساء:59</span><span dir=ltr
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Hai orang-orang yang beriman,
+taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu. Kemudian
+jika kamu berlainan pendapat tentang sesuatu, maka kembalikanlah ia kepada
+Allah dan Rasul (Qur'an dan Sunnahnya) jika kamu benar-benar beriman kepada
+Allah dan hari kemudian. Yang demikian itu lebih utama (bagimu) dan lebih baik
+akibatnya</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [An-Nisa' : 59]</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Yang
+dimaksud "<b><i>ulil amri</i></b>" ialah orang-orang yang memerintah
+dan para ulama.</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">اِنَّ
+اللهَ لاَ
+يَجْمَعُ
+اُمـَّتِى
+عَلَى ضَلاَلــَةٍ.
+وَيـَدُ
+اللهِ مَعَ
+اْلجَمَاعَةِ.
+الترمذى</span><span dir=ltr
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">1.
+<i>Sesungguhnya Allah tidak akan menghimpunkan ummatku atas kesesatan, dan
+tangan Allah beserta jama'ah</i>. [HR. Tirmidzi]</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span
+ lang=AR-SA style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">اِنَّ
+اُمـَّتِى
+لاَ
+تَجْتَمِعُ
+عَلَى
+ضَلاَلــَةٍ.ابـن
+ماجه</span><span dir=ltr style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">2.
+<i>Sesungguhnya ummatku tidak akan berkumpul atas kesesatan.</i></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">[HR. Ibnu Majah].<i></i></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dengan hadits
+tersebut, mereka mengambil pengertian bahwa oleh karena ummat Nabi Muhammad (ummat
+Islam) tidak akan berkumpul (berhimpun) menjadi satu di dalam kesalahan atau
+kesesatan, maka sudah barang tentu apabila mereka telah berijma' mengadakan
+keputusan adalah didalam kebenaran. Maka keputusan ummat Islam yang dengan
+ijma' itu pasti di dalam kebenaran. Dan tiap-tiap kebenaran itu harus diturut.</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span dir=ltr></span><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"><span dir=ltr></span><span
+ style="mso-spacerun: yes">&nbsp;</span>Adapun hal-hal yang boleh diijma'kan
+adalah hal-hal yang bersifat keduniaan, bukan masalah ibadah, karena urusan
+ibadah itu harus menurut contoh yang pernah dikerjakan oleh Nabi SAW dan telah
+cukup sempurna.</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Demikianlah
+penjelasan tentang ijma'.</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">&nbsp;</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 12pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">AL-QIYAS DASAR HUKUM YANG KEEMPAT
+DALAM ISLAM</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">1. Qiyas Menurut Lughat (Bahasa)</span></i></b></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Kata
+: Qiyas itu asalnya dari :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: center"><span lang=AR-SA style="FONT-SIZE:
+ 22pt;
+ FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">قَاسَ -
+يَـقِـيْسُ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>قَيْسًا وَ
+قِيَاسًا.<span
+ style="mso-spacerun: yes">&nbsp; </span><i><span
+ style="mso-spacerun: yes">&nbsp;</span></i></span><span dir=ltr></span><i><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"><span
+ dir=ltr></span>(Mengukur atau ukuran)</span></i><span dir=ltr style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Jadi
+kata "<i>qiyas</i>" itu artinya "<i>ukuran</i>", "<i>sukatan</i>",
+"<i>timbangan</i>" dan lainnya lagi yang searti dengan itu. Misalnya
+dikatakan :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">قَاسَ
+الشَّيْءَ
+بِغَيْرِهِ
+اَوْ عَلَى غَيْرِهِ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Ia telah mengukur sesuatu dengan
+lainnya atau atas lainnya</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan
+dapat juga diartikan membandingkan, seperti :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">فُلاَنٌ<span
+ style="mso-spacerun: yes">&nbsp; </span>لاَ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>يُقَاسُ<span
+ style="mso-spacerun: yes">&nbsp; </span>بِفُلاَنٍ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Si fulan tidak boleh dibandingkan
+dengan si fulan yang lain</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">2. Qiyas Menurut Ta'rif Ahli Ushul</span></i></b></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Para
+'ulama ahliushul fiqih dalam memberikan ta'rif (definisi) tentang "<i>qiyas</i>",
+bermacam-macam, antara lain adalah sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">اِسْتِخْرَاجُ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>مِثْلِ
+حُكْمِ اْلمَذْكُـوْرِ
+لـِمَا لَمْ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>يُذْكَرْ بِجَامِعٍ<span
+ style="mso-spacerun: yes">&nbsp;
+</span>بَـيْنَهُمَا.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Mengeluarkan misal hukum yang telah disebutkan kepada
+suatu hal yang tidak disebutkan hukumnya dengan cara menghimpun antara keduanya</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">اَلــْقَيَاسُ:
+مُسَاوَاةُ
+اْلمَسْكُوْتِ
+لِلْمَنْصُوْصِ
+فِى عِلَّةِ
+اْلحُكْمِ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Qiyas itu ialah membandingkan yang didiamkan kepada yang
+dinash-kan (diterangkan) pada 'illat hukum</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-KASHIDA:
+ 0%; unicode-bidi: embed; DIRECTION: rtl; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial">تَحْصِيْلُ
+الْحُكْمِ
+اْلأَصْلِ
+فِى اْلـفَرْعِ
+لاِشْتِـبَاهِهِمَا
+فِى عِلَّةِ الْحُكْمِ.</span><span
+ dir=ltr
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Menghasilkan hukum pokok pada cabang
+karena bersamaan keduanya pada 'illat hukum</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Penjelasan :</span></i></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Kesimpulan yang
+telah diberikan oleh para 'ulama ahli ushul tentang Qiyas ini adalah sebagai
+berikut :</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Menghubungkan suatu
+pekerjaan dengan pekerjaan yang lain tentang hukumnya</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">,
+<i>karena kedua pekerjaan itu bersatu pada 'illat, yang menyebabkan bersatu
+pula pada hukumnya</i>. Atau <i>Menetapkan satu hukum syara' yang sudah tetap
+pada satu benda atau urusan, kepada satu benda atau urusan lain yang dipandang
+sama sebab-sebabnya atau sama sifat-sifatnya</i>.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Misalnya tentang
+khamr, Allah telah melarang khamr sebagaimana telah dinyatakan dalam
+firman-Nya. Khamr yang dilarang itu ialah air anggur yang telah dibikin menjadi
+minuman keras (arak). Setelah diperiksa, diselidiki dan difikirkan sebabnya
+dilarang, terdapatlah bahwa khamr itu adalah memabukkan bagi orang yang
+meminumnya, yang juga mengakibatkan merusak badan, fikiran serta pergaulannya.
+Maka sifat memabukkan itu dipandang sebagai sebab bagi haramnya. Dengan
+demikian dapat di-qiyas-kan, bahwa : tiap-tiap minuman yang memabukkan itu
+dihukumi haram (terlarang) juga, walaupun asalnya bukan dari anggur. Inilah
+sebagai misal hukum dengan qiyas.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida; TEXT-INDENT: 14.2pt"><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan dengan misal
+yang ringkas ini, mengertilah kita bahwa hukum qiyas itu dilakukan dengan akal
+fikiran orang yang mengerti, setelah diselidiki dengan seksama, dan
+dibandingkan dengan nash hukum yang telah tertulis di dalam Al-Qur'an atau di
+dalam As-Sunnah.</span></p>
+
+<p class=MsoNormal align=right style="TEXT-ALIGN: right"><i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">[Bersambung].</span></i></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Rukun Qiyas </span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">...........</span></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>

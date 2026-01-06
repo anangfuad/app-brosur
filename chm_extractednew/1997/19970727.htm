@@ -1,0 +1,918 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"DecoType Naskh";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"DecoType Naskh";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 240.95pt right 453.55pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"DecoType Naskh";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"DecoType Naskh";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"DecoType Naskh";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text 2";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"DecoType Naskh";
+	mso-bidi-font-family:"DecoType Naskh";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-bidi-font-family:"Traditional Arabic";}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoBodyText style="MARGIN-BOTTOM: 6pt"><span style="mso-no-proof:
+ yes"></span>Ahad, 27 Juli 1997/22 Rabi'ul
+Awwal 1418<span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Brosur No. : 893/933/IA</p>
+
+<p class=MsoNormal align=center style="MARGIN-BOTTOM: 6pt; TEXT-ALIGN: center"><span
+
+ style  ="FONT-SIZE: 18pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Al-Akhlaqul
+Karimah (ke-9)</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM: 6pt"><b><i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Cinta dan Benci
+Karena Allah</span></i></b></p>
+
+<p class=MsoNormal><i><u><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Firman Allah SWT :</span></u></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">وَ
+اعْتَصِمُوْا
+بِحَبْلِ
+اللهِ
+جَمِيْعًا
+وَّ لاَ
+تَـفَرَّقُوْا
+وَ
+اذْكُـرُوْا
+نِعْمَتَ
+اللهِ عَلَـيْكُمْ
+اِذْ
+كُـنْتُمْ
+اَعْدَآءً
+فَاَلـَّفَ
+بَـيْنَ
+قُـلُـوْبِكُمْ
+فَـاَصْبَحْتُمْ
+بِـنِـعْمَـتِه
+اِخْوَانــًا،
+وَ
+كُـنْـتُمْ
+عَلى شَفَا
+حُفْرَةٍ
+مِّنَ النـَّارِ
+فَـاَنــْقَذَكُمْ
+مِنْـهَا، كَذلِكَ
+يُـبَـيِّنُ
+اللهُ لَكُمْ
+ايـتِه لَعَلَّكُمْ
+تَـهْـتَدُوْنَ.
+ال عمران:103</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan berpeganglah kamu semua kepada tali (agama) Allah dan
+janganlah kamu bercerai-berai, dan ingatlah akan nikmat Allah kepadamu ketika
+kamu dahulu (di masa jahiliyah) bermusuh-musuhan, maka Allah mempersatukan
+hatimu, lalu menjadilah kamu karena nikmat Allah orang-orang yang bersaudara.
+Dan kamu telah berada di tepi jurang neraka, lalu Allah menyelamatkan kamu
+daripadanya. Demikianlah Allah menerangkan ayat-ayat-Nya kepadamu, agar kamu
+mendapat petunjuk</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [QS. Ali Imran : 103]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">لَـقَدْ
+جَآءَكُمْ
+رَسُوْلٌ
+مِّنْ
+اَنــْفُسِكُمْ
+عَـزِيـْزٌ
+عَلَـيْهِ
+مَا
+عَنِـتُّمْ
+حَرِيـْصٌ
+عَلَـيْكُمْ
+بِاْلمُؤْمـِنِـيْنَ
+رَءُوْفٌ
+رَّحِيْمٌ.
+التوبة:128</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Sesungguhnya telah datang kepadamu seorang Rasul dari
+kaummu sendiri, berat terasa olehnya penderitaanmu, sangat menginginkan
+(keimanan dan keselamatan) bagimu, amat belas kasihan lagi penyayang terhadap
+orang-orang mukmin</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [QS. At-Taubah : 128]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">مُحَمَّدٌ
+رَّسُوْلُ
+اللهِ وَ
+الَّذِيـْنَ
+مَعَه
+اَشِدَّآءُ
+عَلَى
+اْلكُـفَّارِ
+رُحَمَآءُ
+بَـيْنَـهُمْ.
+الفتح:29</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Muhammad itu adalah utusan Allah dan orang-orang yang
+bersama dengan dia adalah keras terhadap orang-orang kafir, tetapi berkasih
+sayang sesama mereka</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [Al-Fath : 29]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اِنَّمَا
+اْلمُؤْمِنُوْنَ
+اِخْوَةٌ
+فَاَصْلِحُوْا
+بَيْنَ
+اَخَوَيـْكُمْ
+وَ اتَّقُوا
+اللهَ
+لَـعَلَّكُمْ
+تُـرْحَمُوْنَ.
+الحجرات:10</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Sesungguhnya orang-orang Mukmin adalah bersaudara karena
+itu damaikanlah antara kedua saudaramu dan bertaqwalah kepada Allah supaya kamu
+mendapat rahmat</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [QS. Al-Hujurat : 10] </span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">وَ
+اْلمُؤْمـِنُـوْنَ
+وَ
+اْلمُؤْمـِنَاتُ
+بَـعْضُهُمْ
+اَوْلــِيَآءُ
+بَـعْضٍ.
+التوبة:71</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dan orang-orang yang beriman, lelaki dan perempuan,
+sebagian mereka (adalah) menjadi penolong bagi sebagian yang lain</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.
+[At-Taubah : 71]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt;
+ FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اِنَّمَا
+وَلــِيُّكُمُ
+اللهُ وَ
+رَسُوْلُه وَ
+الَّذِيـْنَ
+امَنُـوا
+الَّذِيـْنَ
+يُـقِيْمُوْنَ
+الصَّلـوةَ
+وَ
+يُـؤْتُـوْنَ
+الـزَّكـوةَ
+وَ هُمْ
+رَاكِـعُوْنَ.
+وَ مَنْ
+يَّـتَـوَلَّ
+اللهَ وَ
+رَسُوْلَه وَ
+الَّذِيـْنَ
+امَنُـوْا
+فَاِنَّ
+حِزْبَ اللهِ
+هُمُ اْلغـلـِبُوْنَ.
+المائدة:55-56</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Sesungguhnya penolong kamu hanyalah Allah. Rasul-Nya, dan
+orang-orang yang beriman, yang mendirikan shalat dan menunaikan zakat, seraya
+mereka tunduk (kepada Allah). Dan barangsiapa mengambil Allah, Rasul-Nya dan
+orang-orang yang beriman menjadi penolongnya, maka sesungguhnya pengikut
+(agama) Allah itulah yang pasti menang</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [Al-Maidah : 55
+- 56]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">قُلْ
+اِنْ كَانَ
+ابَآؤُكُمْ
+وَ
+اَبـْنَآؤُكُمْ
+وَ
+اِخْوَانُكُمْ
+وَ
+اَزْوَاجُكُمْ
+وَ
+عَشِيْرَتُكُمْ
+وَ اَمْوَالُ
+اقْـتَرَفْـتُمُوْهَا
+وَ
+تـِجَارَةٌ
+تَخـْشَوْنَ
+كَسَادَهَا
+وَ مَسكِـنُ
+تَـرْضَوْنَـهَآ
+اَحَبَّ
+اِلَـيْكُمْ
+مِّنَ اللهِ
+وَ رَسُوْلــِه
+وَ جـِهَادٍ
+فِيْ
+سَبِـيْلــِه
+فَـتَرَبـَّصُوْا
+حَتّى
+يَـأْتـِيَ
+اللهُ بِـاَمْرِه،
+وَ اللهُ لاَ
+يَـهْدِى
+اْلـقَوْمَ
+اْلـفسِقِـيْنَ.
+التوبة:24</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Katakanlah : "Jika bapa-bapa, anak-anak,
+saudara-saudara, isteri-isteri, kaum keluargamu, harta kekayaan yang kamu
+usahakan, perniagaan yang kamu khawatiri kerugiannya, dan rumah-rumah tempat
+tinggal yang kamu sukai, adalah lebih kamu cintai daripada Allah dan Rasul-Nya
+dan (dari) berjihad di jalan-Nya, maka tunggulah sampai Allah mendatangkan
+keputusan-Nya. Dan Allah tidak memberi petunjuk kepada orang-orang fasiq"</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.
+[At-Taubah : 24]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt;
+ FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اِنَّمَا
+يَـنْـهيكُمُ
+اللهُ عَنِ
+الَّذِيـْنَ
+قَاتَـلُـوْكُمْ
+فِى
+الدِّيـْنِ
+وَ اَخْرَجُوْكُمْ
+مِّنْ
+دِيَـارِكُمْ
+وَ ظَهَرُوْا
+عَلى
+اِخْرَاجـِكُمْ
+اَنْ تَـوَلَّـوْهُمْ،
+وَ مَنْ يَـتَـوَلَّـهُمْ
+فَاُولــئِكَ
+هُمُ
+الظّلـِمُوْنَ.
+</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Sesungguhnya Allah hanya melarang
+kamu menjadikan sebagai kawanmu orang-orang yang memerangi kamu karena agama
+dan mengusir kamu dari negerimu dan membantu (orang lain) untuk mengusirmu. Dan
+barangsiapa menjadikan mereka sebagai kawan, maka mereka itulah orang-orang
+yang dhalim</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [Al-Mumtahanah : 9]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><u><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Hadits-hadits Nabi SAW :</span></u></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَنــَسٍ رض
+عَنِ
+النَّبِيِّ ص
+قَالَ: ثَلاَثٌ
+مَنْ كُنَّ
+فِـيْهِ
+وَجـَدَ
+بِـهِنَّ
+حَلاَوَةَ
+اْلاِيــْمَانِ:
+مَنْ كَانَ اللهُ
+وَ رَسُوْلُهُ
+اَحَبَّ
+اِلَـيْهِ
+مِمَّا
+سِوَاهُمَا،
+وَ مَنْ
+اَحَبَّ
+عَبْدًا لاَ
+يُحِبُّهُ
+اِلاَّ
+ِللهِ، وَ
+مَنْ
+يَكْرَهُ
+اَنْ
+يَـعُوْدَ فِى
+الْكُـفْرِ
+بَـعْدَ اَنْ
+اَنــْقَذَهُ
+اللهُ مِنْهُ
+كَمَا
+يَكْرَهُ
+اَنْ يُـقْذَفَ
+فِى
+النـَّارِ.
+البخارى و
+مسلم</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Anas RA dari Nabi SAW, beliau bersabda : "Ada
+tiga perkara barangsiapa yang tiga perkara itu ada padanya berarti dengannya ia
+mendapatkan manisnya iman, yaitu barangsiapa yang Allah dan Rasul-Nya itu lebih
+dicintainya dari pada selain keduanya, dan barangsiapa yang mencintai seseorang
+yangmana dia tidak mencintainya kecuali karena Allah, dan barangsiapa yang
+benci untuk kembali kepada kekafiran setelah Allah menyelamatkannya dari
+kekafiran itu sebagaimana dia tidak suka (takut) dilemparkan ke dalam
+api". </span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">[HR. Bukhari dan Muslim - At-Targhib
+wat Tarhib Juz IV halaman 14 - 15]</span><span lang=AR-SA dir=rtl
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَبـِى
+هُرَيـْرَةَ
+رض قَالَ:
+قَالَ رَسُوْلُ
+اللهِ ص:
+اِنَّ اللهَ
+تَعَالَى
+يَقُوْلُ
+يَـوْمَ
+اْلقِيَامَةِ:
+اَيـْنَ
+اْلمُتَحَابـُّوْنَ
+بِجَلاَلـِى؟
+َاْليَـوْمَ اُظِـلُّـهُمْ
+فِى ظِلِّى
+يَـوْمَ لاَ ظِلَّ
+اِلاَّ
+ظِلِّى. مسلم</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Abu Hurairah RA, ia berkata, Rasulullah SAW
+bersabda, Sesungguhnya Allah Ta'ala pada hari qiyamat nanti akan berfirman :
+"Dimana orang-orang yang saling mengasihi karena keagungan-Ku dan mencari
+keridlaan-Ku ? Pada hari ini aku akan memberi perlindungan (naungan) kepada
+mereka di dalam perlindungan-Ku karena pada hari ini tidak ada perlindungan
+kecuali perlindungan-Ku"</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [HR. Muslim -
+At-Targhib wat Tarhib Juz IV halaman 15]</span><span lang=AR-SA dir=rtl
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَبـِى
+اُمَامَةَ رض
+اَنَّ
+رَسُوْلَ اللهِ
+ص قَالَ: مَنْ
+اَحَبَّ
+ِللهِ وَ
+اَبـْغَضَ
+ِللهِ وَ اَعْطَى
+ِللهِ وَ
+مَنَعَ ِللهِ
+فَـقَدِ اسْتَكْـمَلَ
+اْلاِيــْمَانَ.
+ابو داود</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Abu Umamah RA, ia<span
+ style="mso-spacerun: yes">&nbsp; </span>berkata, Sesungguhnya Rasulullah SAW
+bersabda : "Barangsiapa yang mencintai karena Allah, membenci karena
+Allah, memberi karena Allah dan mencegah karena Allah, maka sungguh berarti dia
+telah menyempurnakan iman"</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [HR. Abu Dawud -
+At-Targhib wat Tarhib, Juz IV halaman 24]</span><span lang=AR-SA dir=rtl
+ style
+="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَبـِى ذَرٍّ
+رض قَالَ:
+قَالَ
+رَسُوْلُ اللهِ
+ص: اَفْضَلُ
+اْلاَعْمَالِ
+اْلحُبُّ فِى
+اللهِ وَ اْلـبُغْضُ
+فِى اللهِ.
+ابو داود </span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Abu Dzarr RA, ia berkata, Rasulullah SAW bersabda :
+"Seutama-utama amal ialah cinta karena Allah dan benci karena Allah"</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.
+[HR. Abu Dawud, At-Targhib wat Tarhib, Juz IV halaman 24]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَنــَسٍ رض
+اَنَّ
+رَجُلاً
+سَأَلَ رَسُوْلَ
+اللهِ ص:
+مَتَى
+السَّاعَةُ؟
+قَالَ: وَ مَا
+اَعْدَدْتَ
+لَـهَا؟
+قَالَ: لاَ
+شَيْءَ اِلاَّ
+اَنــِّى
+اُحِبُّ
+اللهَ وَ
+رَسُوْلَهُ.
+قَالَ:
+اَنــْتَ
+مَعَ مَنْ
+اَحْبَبْتَ.
+قَالَ
+اَنــَسٌ:
+فَمَا
+فَـرِحْنَا
+بِشَيْءٍ فَـرِحْنَا
+بِقَوْلِ
+النَّبِيِّ ص:
+اَنــْتَ مَعَ
+مَنْ
+اَحْبَبْتَ.
+قَالَ
+اَنــَسٌ:
+فَـاَنــَا
+اُحِبُّ
+النَّبِيَّ ص
+وَ اَبَا
+بَكْرٍ وَ
+عُمَرَ وَ
+اَرْجُوْ
+اَنْ
+اَكُـوْنَ
+مَعَهُمْ
+بِحُبِّى
+اِيــَّاهُمْ.
+البخارى و
+مسلم</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Anas RA, ia berkata, Sesungguhnya ada seorang
+laki-laki bertanya kepada Rasulullah SAW : "Kapan hari qiyamat itu datang
+?" Rasulullah SAW menjawab : "Apakah kamu sudah mempersiapkan untuk
+menghadapinya ?" Orang laki-laki tersebut menjawab : "Tidak ada
+sesuatu yang telah kupersiapkan untuk menghadapinya selain aku cinta kepada
+Allah dan Rasul-Nya". Rasulullah SAW bersabda : "Kamu bersama orang
+yang kamu cintai". Anas berkata, "Belum pernah aku gembira segembira
+ketika Nabi SAW<span style="mso-spacerun: yes">&nbsp; </span>bersabda :
+"Kamu bersama orang yang kamu cintai". Anas berkata pula :
+"Karena saya mencintai Nabi SAW, Abu Bakar dan Umar dan saya berharap
+dengan kecintaan saya kepada mereka itu saya bisa bersama-sama mereka"</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.
+[HR. Bukhari dan Muslim, At-Targhib wat Tarhib, Juz IV halaman 24 - 25]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَبـِى
+هُرَيـْرَةَ
+رض عَنِ
+النَّبِيِّ ص
+قَالَ:
+سَبْعَةٌ
+يُظِلُّـهُمُ
+اللهُ فِى ظِلِّهِ
+يَوْمَ لاَ
+ظِلَّ اِلاَّ
+ظِلُّهُ: َاْلاِمَامُ
+اْلعَادِلُ،
+وَ شَابٌّ
+نَـشَأَ فِى
+عِبَادَةِ
+اللهِ، وَ
+رَجُلٌ
+قَـلْبُهُ مُعَلَّقٌ
+فِى
+اْلمَسَاجـِدِ،وَ
+رَجُلاَنِ
+تَحَابـَّا
+فِى اللهِ
+اجْتَمَعَا
+عَلَـيْهِ،
+وَ
+تَفَرَّقَا
+عَلَـيْهِ،
+وَ رَجُلٌ دَعَتْهُ
+امْرَأَةٌ
+ذَاتُ
+مَنْصِبٍ وَ
+جَمَالٍ،
+فَقَالَ: اِنــِّى
+اَخَافُ
+اللهَ، وَ
+رَجُلٌ
+تَصَدَّقَ
+بِصَدَقَةٍ
+فَـأَخْفَاهَا
+حَتَّى لاَ تَـعْلَمَ
+شِمَالُهُ
+مَا
+تُـنْفِقُ
+يَـمِيْنُهُ،
+وَ رَجُلٌ
+ذَكَرَ اللهَ
+خَالـِيًا فَفَاضَتْ
+عَيْنَاهُ.
+البخارى و
+مسلم</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Abu Hurairah RA dari Nabi SAW, beliau bersabda :
+"Ada tujuh golongan yang Allah akan menaungi mereka di dalam naungan-Nya
+pada hari tidak ada naungan kecuali naungan-Nya, yaitu : 1. Imam yang adil, 2.
+Pemuda yang giat dalam beribadah kepada Allah, 3. Orang lelaki yang hatinya
+bergantung pada masjid-masjid, 4. Dua orang yang saling mengasihi karena Allah,
+keduanya berkumpul karena Allah dan berpisah karena Allah, 5. Orang laki-laki
+yang diajak berzina oleh wanita yang bangsawan, kaya lagi cantik molek, tetapi
+dia tidak mau dan mengatakan : "Aku takut kepada Allah", 6. Orang
+yang bersedekah dengan suatu sedekah dan ia menyembunyikannya sehingga tangan
+kirinya tidak tahu apa yang diberikan oleh tangan kanannya, dan 7. Orang yang
+mengingat Allah diwaktu sunyi sehingga mengalirlah air mata kedua matanya"</span></i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">.
+[HR. Bukhari dan Muslim, At-Targhib wat Tarhib, Juz IV halaman 15-16]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+عُبَادَةَ
+بْنِ
+الصَّامِتِ
+رض قَالَ: سَمِعْتُ
+رَسُوْلَ
+اللهِ ص
+يَـأْثـُرُ
+عَنْ رَبـِّهِ
+تَبَارَكَ وَ
+تَـعَالَى
+يَقُوْلُ:
+حَقَّتْ
+مَحَبَّتـِى
+لِلْمُتُحَابِّـيْنَ
+فِيَّ، وَ
+حَقَّتْ
+مَحَبَّتـِى
+ِللْمُتَوَاصِـلـِيْنَ
+فـِـيَّ، وَ
+حَقَّتْ
+مَحَبَّـتِى
+لِلْمُتُـزَاوِرِيـْنَ
+فِيَّ، وَ
+حَقَّتْ
+مَحَبَّتـِى
+ِللْمُتَبَاذِلــِيْنَ
+فِيَّ. احمد
+بإسناد صحيح</span></p>
+
+<p class=MsoNormal style="TEXT-KASHIDA:
+ 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Ubadah bin Shamit RA ia berkata, Aku mendengar
+Rasulullah SAW menceritakan dari Tuhannya Tabaaroka wa Ta'alaa. Dia berfirman :
+"Berhak mendapat kecintaan-Ku (yaitu) orang-orang yang saling mencintai
+karena Aku, berhak mendapat kecintaan-Ku orang-orang yang saling menyambung
+persaudaraan karena Aku, berhak mendapat kecintaan-Ku orang-orang yang saling
+mengunjungi karena Aku dan berhak mendapat kecintaan-Ku orang-orang yang
+mencurahkan kesungguhannya karena Aku"</span></i><span style="FONT-SIZE:
+
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [HR. Ahmad
+dengan sanad yang shahih, At-Targhib wat Tarhib, Juz IV halaman 19]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoBodyText2 dir=rtl><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+مُعَاذِ بْنِ
+اَنــَسٍ رض
+اَنـــَّهُ
+سَأَلَ
+رَسُوْلَ
+اللهِ ص عَنْ اَفْضَلِ
+اْلاِيــْمَانِ
+قَالَ: اَنْ
+تُحِبَّ
+ِللهِ، وَ
+تُـبْغِضَ
+ِللهِ وَ
+تَـعْمَلَ
+لـِسَانَـكَ
+فِى ذِكْرِ
+اللهِ، قَالَ:
+وَ مَا ذَا
+يَا رَسُوْلَ
+اللهِ؟ قَالَ:
+وَ اَنْ تُحِبَّ
+لِلنـَّاسِ
+مَا تُحِبُّ
+لـِنَـفْسِكَ
+وَ تَكْرَهَ
+لَـهُمْ مَا
+تَكْرَهُ
+لـِنَـفْسِكَ.
+احمد</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">Dari Mu'adz bin Anas RA,
+sesungguhnya dia pernah bertanya kepada Rasulullah SAW tentang iman yang paling
+utama. Rasulullah SAW ber-sabda : "(Iman yang paling utama ialah) kamu
+mencintai karena Allah, membenci karena Allah, kamu melakukan dengan lesanmu
+untuk dzikir kepada Allah". Mu'adz berkata : "Dan apalagi ya
+Rasulullah ?" Beliau menjawab :" Dan kamu senang untuk orang lain
+sebagaimana kamu senang untuk dirimu sendiri dan kamu tidak suka sesuatu
+menimpa mereka sebagaimana kamu tidak suka sesuatu itu menimpa pada dirimu
+sendiri"</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY:
+ 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'">. [HR. Ahmad,<span
+ style="mso-spacerun: yes">&nbsp; </span>At Targhib wat Tarhib, Juz IV halaman
+23]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: Arial"></span></p>
+
+<p class=MsoNormal align=right style="TEXT-ALIGN: right"><span dir=ltr></span><i><span
+
+ style  ="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'; mso-bidi-font-size: 22.0pt; mso-hansi-font-family: 'Times New Roman'"><span
+ dir=ltr></span>[Bersambung]</span></i></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>

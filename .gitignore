@@ -1,0 +1,26 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+
+# === Virtual Environment ===
+venv/
+.venv/
+env/
+
+# === OS / Editor ===
+.DS_Store
+Thumbs.db
+.vscode/
+
+# === Logs ===
+*.log
+
+# === Secrets / Env ===
+.env
+
+# === Build / Cache ===
+*.egg-info/
+.dist-info/
+
+# === CHM Source (NOT needed in production) ===
+*.chm

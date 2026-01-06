@@ -1,0 +1,777 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;
+	mso-endnote-numbering-style:alpha-lower;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: center"><span style="FONT-SIZE:
+ 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-no-proof: yes"></span><span
+ lang=IN style="FONT-SIZE: 10.5pt">
+  </span><span lang=IN style="FONT-SIZE: 10.5pt">Ahad, 08 Agustus
+2004/21 Jumadits tsani 1425<span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Brosur no.
+: 1236/1276/SI
+
+  </span></p>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+
+ embed; DIRECTION: ltr; TEXT-ALIGN: center; MARGIN: 12pt 0cm 6pt"><span lang=IN style="FONT-SIZE: 18pt; FONT-FAMILY:
+
+ 'Times New Roman','serif'; mso-ascii-theme-font: minor-bidi; mso-hansi-theme-font: minor-bidi; mso-bidi-theme-font: minor-bidi">Tarikh Nabi Muhammad SAW (ke-132)</span></p>
+
+<p class=MsoNormal align=center style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: center"><span lang=IN style="FONT-SIZE: 12pt">Perang
+Hunain</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Asal
+mula terjadinya perang Hunain</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+Nabi SAW dan kaum muslimin selesai membuka Makkah dengan kemenangan yang sangat
+memuaskan, lalu beliau bersama kaum muslimin berdiam di Makkah selama lima
+belas hari (dalam riwayat lain sembilan belas hari). Kemudian datang berita
+yang mengejutkan bahwa beberapa kabilah bangsa 'Arab di sekitar kota Makkah,
+yaitu : kabilah banu Hawazin, banu Tsaqif, banu Nashr, banu Jusyam, banu Bakr
+dan sebagian banu Hilal secara sembunyi-sembunyi telah mengadakan persiapan
+akan memerangi kaum muslimin. Mereka itu belum mau tunduk kepada kaum muslimin,
+karena merasa masih mempunyai kekuatan yang cukup dan benteng-benteng yang
+kokoh kuat di Thaif. Adapun yang diangkat sebagai pemimpin mereka adalah Malik
+bin Auf An-Nashriy dari kaum Hawazin, dan Duraid bin Ash-Shimmah dari banu
+Jusyam.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Keberangkatan
+kaum Hawazin ke Hunain</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sebelum
+kabilah masing-masing berangkat, Malik bin 'Auf An-Nashriy telah berangkat
+lebih dulu bersama pasukannya yang terdiri dari orang laki-laki dan perempuan
+serta anak-anak mereka. Harta benda dan binatang-binatang milik mereka pun
+mereka bawa juga. Malik bin 'Auf menempatkan para wanita di belakang pasukan
+laki-laki, lalu di belakangnya lagi unta, lalu lembu, lalu kambing agar tidak
+ada yang melarikan diri dari peperangan. Dari kaum banu Hawazin ini yang tidak
+ikut keluar bersama mereka hanya banu Ka'ab dan banu Kilaab.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+tentara kaum Hawazin sampai di lembah Authas, mereka bertemu dengan pasukan
+banu Tsaqif dan lain-lainnya. Di tempat itu mereka berkumpul sehingga tempat
+itu menjadi ramai sekali. Berhubung Malik bin 'Auf mengeluarkan semua perempuan
+dan anak-anak banu Hawazin serta budak-budak mereka, lalu terjadilah
+percekcokan antara Malik bin 'Auf dengan Duraid bin Ash-Shimmah, karena Duraid
+tidak menyetujui sikap yang diambil Malik bin 'Auf tersebut. Masing-masing
+mengemukakan alasannya, namun akhirnya pendapat Malik yang menang, dan Duraid
+pun mengikut apa yang dilakukan Malik bin 'Auf tersebut.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+tentara Hawazin dan lain-lainnya yang telah berkumpul sebanyak lebih kurang
+empat ribu orang tersebut berangkat menuju dusun Hunain, yang letaknya diantara
+Makkah dan Thaif, kira-kira belasan mil sebelah timur laut Makkah.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+sampai di Hunain, Malik bin 'Auf sebagai panglima tentara Hawazin memerintahkan
+kepada segenap pasukannya agar mengambil posisi di tempat-tempat persembunyian
+di perbukitan Hunain, dengan tujuan jika sewaktu-waktu tentara Islam sampai di
+tempat itu dan melaluinya, mereka dengan cepat dapat menghujani anak panah dan
+melempari dengan batu-batu dari atas bukit ke arah tentara Islam.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Keberangkatan
+Nabi Muhammad SAW beserta tentara Islam ke Hunain.</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+mendengar berita bahwa kaum Hawazin, kaum Tsaqif dan lain-lainnya telah
+bersekutu menjadi satu kesatuan angkatan perang yang siap akan mengadakan
+perlawanan terhadap kaum muslimin, dan ketika itu mereka telah berkumpul di
+Hunain, maka Nabi SAW segera menyuruh 'Abdullah bin Abu Hadrad Al-Aslamiy
+seorang yang gagah berani untuk menyelidiki keadaan mereka.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Ibnu
+Ishaq meriwayatkan sebagai berikut : Setelah Nabi SAW mendengar bahwa kaum
+Hawazin, kaum Tsaqif dan sekutunya telah berada di Hunain, beliau lalu mengutus
+'Abdullah bin Abu Hadrad Al-Aslamiy agar masuk ke tengah-tengah mereka untuk
+menyelidiki keadaan mereka. Kemudian 'Abdullah bin Abu Hadrad berangkat dan
+bergabung dengan mereka sehingga ia mengetahui keadaan mereka dan rencana
+mereka memerangi Rasulullah SAW.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+ia menyelesaikan tugasnya, lalu datang kepada Rasulullah SAW dan menyampaikan
+berita tersebut kepada Rasulullah SAW. Kemudian Rasulullah SAW memanggil 'Umar
+bin Khaththab, lalu memberitahukan khabar tersebut. 'Umar berkata, <i>"Ibnu
+Abi Hadrad itu berbohong"</i>.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Ibnu Abi Hadrad menjawab, <i>"Jika kamu mendustakan aku, mungkin kamu
+termasuk mendustakan kebenaran, hai 'Umar, karena berarti kamu telah
+mendustakan orang yang lebih baik daripada aku</i>".</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span dir=ltr></span><span
+ lang=IN><span dir=ltr></span>'Umar berkata, <i>"Ya Rasulullah, apakah
+engkau tidak mendengar apa yang dikatakan Ibnu Abi Hadrad ?". </i>Lalu
+Rasulullah SAW bersabda, <i>"Sungguh kamu dahulu tersesat, lalu Allah
+menunjukimu, wahai 'Umar</i>". [Ibnu Hisyam juz 5, hal. 107]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sebelum
+berangkat ke Hunain, diberitahukan kepada Nabi SAW bahwa Shafwan bin Umayyah
+mempunyai alat-alat perang. Maka Nabi SAW lalu mengutus seseorang kepadanya dan
+pada waktu itu Shafwan bin Umayyah masih musryik. Nabi SAW bersabda :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">يَا
+اَبَا
+اُمَيَّةَ
+اَعِرْنَا
+سِلاَحَكَ ه?ذَا
+نَلْقَ
+فِيْهِ
+عَدُوَّنَا
+غَدًا.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Hai
+Abu Umayyah, pinjamkanlah senjatamu ini kepada kami yang akan kami gunakan
+melawan musuh besok pagi</span></i><span lang=IN>.</span><span lang=AR-SA
+ dir=rtl style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Shafwan
+bin Umayyah menjawab :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اَ
+غَصْبًا يَا
+مُحَمَّدُ؟</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Apakah
+ini permintaan secara ghasab (paksa) ya Muhammad ?</span></i><i><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></i></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Nabi
+SAW bersabda :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">بَلْ
+عَارِيَةٌ
+مَضْمُوْنَةٌ
+حَتَّى
+نُؤَدّيَهَا
+اِلَيْكَ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Tidak,
+tetapi ini pinjaman yang ditanggung dan nanti kami akan mengembalikannya
+kepadamu</span></i><span lang=IN>.</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Shafwan
+menjawab :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">لَيْسَ
+بِه?ذَا
+بَأْسٌ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Tidak
+mengapa kalau begitu</span></i><span lang=IN>.</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Lalu ia
+meminjamkan kepada beliau seratus baju besi dan persenjataan secukupnya. [Ibnu
+Hisyam juz 5, hal. 108]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Nabi SAW menyerahkan pimpinan ummat di kota Makkah kepada 'Attab bin Asiid.
+Angkatan perang kaum muslimin sebanyak dua belas ribu orang, terdiri dari
+sepuluh ribu orang dari pasukan yang datang dari Madinah dan dua ribu orang
+dari penduduk Makkah yang baru saja mengikut Islam.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Selanjutnya
+pada tanggal 5 Syawwal tahun ke delapan hijriyah beliau bersama tentara Islam
+sebanyak dua belas ribu orang itu berangkat ke Hunain, tempat pertahanan musuh.
+Barisan berjalan kaki dan barisan berkuda dari tentara Isam berangkat dari
+Makkah dengan diiringi barisan unta yang membawa perbekalan dan persenjataan
+perang yang cukup lengkap. Tiap-tiap kabilah berjalan dengan benderanya, dan
+masing-masing rombongan merasa bangga dan gembira, karena besarnya jumlah
+tentara itu. Pada waktu itu sebagian dari mereka ada yang berkata kepada yang
+lainnya, "Kita yaqin bahwa kemenangan pasti di tangan kita, dan musuh
+tidak akan dapat mengalahkan kita".</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Mereka
+berkata demikian karena baru kali ini tentara Islam akan berperang denganjumlah
+yang begitu besar dan dengan persenjataan begtu lengkap. Mereka diiringi pula
+oleh kaum perempuan dari Makkah yang baru saja masuk Islam pada hari dibukanya
+kota Makkah, yang masing-masing dengan tujuan akan mendapat bagian harta
+rampasan.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Dan
+ikut bergabung dengan pasukan muslimin delapan puluh orang yang masih musyrik,
+diantaranya Shafwan bin Umayyah dan Sahl bin 'Amr. Setelah dekat dengan pertahanan
+musuh lalu Nabi SAW mengatur barisan. Kemudian beliau memberikan benedar kaum
+muhajirin kepada 'Ali bin Abu Thalib, dan bendera Khazraj kepada </span><span
+ lang=IN style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Habbab bin
+Al-Mundzir, dan bendera Aus kepada Usaid bin Hudlair, demikian pula beliau
+memberikan bendera kepada kabilah-kabilah 'Arab yang lain. Kemudian Nabi SAW
+dengan berpakaian perang, memakai dua baju besi dan memakai topi baja beliau
+naik baghalnya.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Selanjutnya
+ketika itu ada sebagian dari tentara kaum muslimin yang baru memeluk Islam yang
+tengah berjalan melalui suatu pohon yang rindang yang hijau warnanya, tiba-tiba
+dari tempat yang agak jauh mereka berteriak-teriak dan berkata kepada Nabi SAW,
+"Ya Rasulullah, jadikanlah pohon ini untuk kami tempat menggantungkan
+nasib, sebagaimana mereka (kaum musyrikin Makkah) menjadikan sebuah pohon yang
+besar yang dinamakan Dzaatu Anwaath, yang mereka biasa menyembelih hewan,
+beribadah dan menggantungkan senjata-senjata mereka pada pohon tersebut.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Mendengar
+perkataan dari sebagian kaum muslimin yang demikian itu, lalu beliau bersabda
+dengan keras :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اَللهُ
+اَكْبَرُ!
+قُلْتُمْ؟ وَ
+الَّذِى نَفْسُ
+مُحَمَّدٍ
+بِيَدِهِ
+كَمَا قَالَ
+قَوْمُ
+مُوْسَى
+لِمُوْسَى: <b>اِجْعَلْ
+لَنَا اِل?هًا
+كَمَا لَهُمْ
+ا?لِهَةٌ.
+قَالَ
+اِنَّكُمْ
+قَوْمٌ
+تَجْهَلُوْنَ</b>.
+اِنَّهَا
+السُّنَنُ
+لَتَرْكَبُنَّ
+سُنَنَ مَنْ
+كَانَ
+قَبْلَكُمْ.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Allah
+Maha Besar, kamu berkata begitu ? Demi Allah yang diri Muhammad di tangan-Nya,
+itu sebagaimana kaum nabi Musa berkata kepada Nabi Musa, <b>"Buatlah untuk
+kami satu tuhan (berhala) sebagaimana mereka mempunyai beberapa tuhan (berhala-berhala)".
+Musa berkata, "Sesungguhnya kamu itu orang-orang yang bodoh</b>.
+(Al-A'raaf : 138). Sesungguhnya itulah kelakuan yang sungguh kalian akan
+mengikuti kelakuan orang-orang sebelum kalian dahulu"</span></i><span
+ lang=IN>. [Ibnu Hisyam juz 5, hal. 110]</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><u><span lang=IN>Tentara
+musuh menyerang tentara Islam.</span></u></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sebelum
+matahari terbenam, tentara kaum muslimin telah tiba di depan jalan masuk ke
+lembah Hunain. Dan karena perbukitan di Hunain sangat banyak dan serupa, maka
+agak sulit bagi tentara muslimin untuk mengetahui di tempat mana pihak tentara musuh
+bersarang. Sebab itu, maka terpaksalah mereka berhenti dan bermalam di tempat
+itu, dengan rencana besok sesudah fajar menyingsing mereka akan meneruskan
+perjalanan untuk menuju ke medan pertempuran.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Tentara
+kaum muslimin sedikitpun tidak mengira, bahwa tentara musuh telah siap-siaga di
+tempat itu. Kemudian pada esok harinya tentara kaum muslimin ketika akan
+melanjutkan perjalanan, yakni ketika tentara kaum muslimin berjalan sebentar
+dan baru sampai di penurunan salah satu bukit, tiba-tiba mereka mendapat
+serangan musuh yang bersembunyi di dalam gua-gua yang terletak di lerang bukit
+itu.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Serangan
+yang mendadak dari musuh itu amat mengejutkan tentara kaum muslimin. Barisan
+tentara Islam seketika itu menjadi kacau-balau, kocar-kacir dan lari tunggang
+langgang dengan tidak menentu lagi, karena mereka dalam keadaan belum siap
+bertempur, terlebih lagi suasana masih gelap.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Dengan
+demikian tentara kaum muslimin tidak dapat mengadakan perlawanan sedikitpun,
+dan serangan dari musuh tidak dapat dielakkan lagi, karena hujan anak panah
+terus datang bertubi-tubi, baik dari sebelah kanan maupun kiri, dan dari atas.
+Dengan kata lain, dari segenap jurusan mereka dihujani anak panah. Sehingga
+jumlah besar yang mereka bangga-banggakan sebelum itu tidak dapat menolong mereka
+sedikitpun.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Pihak
+musuh terus maju dan mengejar, serangan mereka terhadap tentara kaum muslimin
+makin diperkuat dan panah mereka pun terus dilancarkan.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Muslim
+meriwayatkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">قَالَ
+عَبَّاسُ:
+شَهِدْتُ
+مَعَ
+رَسُوْلِ اللهِ
+ص يَوْمَ
+حُنَيْنٍ فَلَزِمْتُ
+اَنَا وَ
+اَبُوْ
+سُفْيَانَ
+بْنُ اْلحَارِثِ
+بْنِ عَبْدِ
+اْلمُطَّلِبِ
+رَسُوْلَ
+اللهِ ص
+فَلَمْ
+نُفَارِقْهُ،
+وَ رَسُوْلُ
+اللهِ ص عَلَى
+بَغْلَةٍ
+لَهُ
+بَيْضَاءَ
+اَهْدَاهَا
+لَهُ
+فَرْوَةُ
+بْنُ
+نُفَاثَةَ
+اْلجُذَامِيُّ.
+فَلَمَّا
+اْلتَقَى
+اْلمُسْلِمُوْنَ
+وَ اْلكُفَّارُ
+وَلَّى
+اْلمُسْلِمُوْنَ
+مُدْبِرِيْنَ.
+فَطَفِقَ
+رَسُوْلُ
+اللهِ ص يَرْكُضُ
+بَغْلَتَهُ
+قِبَلَ
+اْلكُفَّارِ.
+قَالَ
+عَبَّاسٌ: وَ
+اَنَا ا?خِذٌ
+بِلِجَامِ
+بَغْلَةِ
+رَسُوْلِ
+اللهِ ص اَكُفُّهَا
+اِرَادَةَ
+اَنْ لاَ
+تُسْرِعَ، وَ
+اَبُوْ
+سُفْيَانَ ا?خِذٌ
+بِرِكَابِ
+رَسُوْلِ
+اللهِ ص.
+فَقَالَ
+رَسُوْلُ اللهِ
+ص: اَيْ
+عَبَّاسُ!
+نَادِ
+اَصْحَابَ
+السَّمُرَةِ.
+فَقَالَ
+عَبَّاسٌ (وَ
+كَانَ
+رَجُلاً صَيّتًا)
+فَقُلْتُ
+بِاَعْلَى
+صَوْتِى.
+اَيْنَ
+اَصْحَابُ
+السَّمُرَةِ؟
+قَالَ: فَوَ
+اللهِ،
+لَكَاَنَّ
+عَطْفَتَهُمْ
+حِيْنَ
+سَمِعُوْا
+صَوْتِى
+عَطْفَةُ
+اْلبَقَرِ
+عَلَى
+اَوْلاَدِهَا،
+فَقَالُوْا:
+يَا
+لَبَّيْكَ،
+يَا لَبَّيْكَ.
+قَالَ:
+فَاقْتَتَلُوْا
+وَ
+اْلكُفَّارَ.
+وَ
+الدَّعْوَةُ
+فِى
+اْلاَنْصَارِ
+يَقُوْلُوْنَ:
+يَا مَعْشَرَ
+اْلاَنْصَارِ،
+يَا مَعْشَرَ
+اْلاَنْصَارِ!
+قَالَ: ثُمَّ
+قُصِرَتِ
+الدَّعْوَةُ
+عَلَى بَنِى
+اْلحَارِثِ
+بْنِ
+اْلخَزْرَجِ
+فَقَالُوْا:
+يَا بَنِى
+اْلحَارِثِ
+بْنِ اْلخَزْرَجِ،
+يَا بَنِى
+اْلحَارِثِ
+بْنِ اْلخَزْرَجِ!
+فَنَظَرَ
+رَسُوْلُ
+اللهِ ص وَ
+هُوَ عَلَى
+بَغْلَتِهِ
+كَاْلمُتَطَاوِلِ
+عَلَيْهَا
+اِلَى
+قِتَالِهِمْ
+فَقَالَ
+رَسُوْلُ
+اللهِ ص: ه?ذَا
+حِيْنَ
+حَمِيَ
+اْلوَطِيْسُ.
+قَالَ: ثُمَّ
+اَخَذَ
+رَسُوْلُ
+اللهِ ص
+حَصَيَاتٍ
+فَرَمَى
+بِهِنَّ
+وُجُوْهَ
+اْلكُفَّارِ.
+ثُمَّ قَالَ
+اِنْهَزَمُوْا
+وَ رَبّ
+مُحَمَّدٍ.
+قَالَ:
+فَذَهَبْتُ
+اَنْظُرُ
+فَاِذَا
+اْلقِتَالُ
+عَلَى
+هَيْئَتِهِ
+فِيْمَا
+اَرَى. قَالَ:
+فَوَ اللهِ،
+مَا هُوَ
+اِلاَّ اَنْ
+رَمَاهُمْ
+بِحَصَيَاتِهِ
+فَمَا زِلْتُ
+اَرَى
+حَدَّهُمْ
+كَلِيْلاً وَ
+اَمْرَهُمْ
+مُدْبِرًا</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+مسلم 3: 1398</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>'Abbas
+berkata, "Aku ikut perang Hunain bersama Rasulullah SAW. Aku dan Abu
+Sufyan bin Al-Harits bin 'Abdul Muththalib selalu mendampingi Rasulullah SAW,
+kami tidak berpisah dengan beliau. Rasulullah SAW menaiki Baghal berwarna putih
+hadiah dari Farwah bin Nufatsah Al-Judzamiy. Setelah kaum muslimin bertemu
+dengan orang-orang kafir, kaum muslimin lari tunggang-langgang, lalu Rasulullah
+SAW memukulkan kaki beliau pada baghalnya (supaya berjalan cepat) ke arah
+orang-orang kafir". 'Abbas berkata, "Aku memegangi kendali baghal
+Rasulullah SAW agar tidak terlalu cepat, sedangkan Abu Sufyan (bin Al-Harits)
+memegangi pelana baghal Rasulullah SAW". Kemudian Rasulullah SAW bersabda,
+"Hai 'Abbas, serulah para Ashhaabus Samurah (orang-orang yang ikut Baiatur
+Ridwan) !". 'Abbas berkata (Ia adalah orang yang lantang suaranya),
+"Lalu aku menyeru dengan sekeras suaraku". "Mana Ashhaabus
+Samurah !". Ia berkata, "Maka demi Allah, Ketika mendengar suaraku,
+mereka berdatangan laksana lembu yang memenuhi panggilan anak-anaknya. Lalu
+mereka menyahut, "Ya labbaik, ya labbaik (Aku penuhi panggilanmu)".
+Ia berkata, "Lalu mereka memerangi orang-orang kafir". Dan diserukan
+kepada orang-orang Anshar, mereka menyerukan, "Hai golongan Anshar, hai
+golongan Anshar". Ia berkata, "Kemudian dikhususkan seruan kepada
+bani Harits bin Khazraj. Mereka menyerukan, "Hai bani Harits bin Khazraj,
+hai bani Harits bin Khazraj !". Kemudian Rasulullah SAW dengan tetap
+berada di atas baghalnya beliau melongok memperhatikan pertempuran. Lalu beliau
+bersabda, "Beginilah ketika peperangan berkecamuk". Ia ('Abbas)
+berkata, "Kemudian Rasulullah SAW mengambil kerikil-kerikil, lalu
+melemparkannya ke wajah orang-orang kafir". Kemudian beliau bersabda,
+"Semoga mereka binasa, demi Tuhannya Muhammad". 'Abbas berkata,
+"Lalu aku memperhatikan, maka waktu itu peperangan terus berkecamuk".
+Ia berkata, "Maka demi Allah, tidaklah setelah beliau melempar kerikil-kerikil
+itu ke wajah mereka kecuali aku lihat kekuatan mereka melemah, lalu mereka
+mundur"</span></i><span lang=IN>. [Muslim juz 3, hal. 1398]</span><span
+ lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: right"><span lang=IN>Bersambung.......... </span><span
+ lang=IN style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt"></span></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>

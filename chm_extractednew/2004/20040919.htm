@@ -1,0 +1,788 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	mso-ansi-language:IN;
+	mso-fareast-language:ZH-CN;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;
+	mso-endnote-numbering-style:alpha-lower;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: center"><span style="FONT-SIZE:
+ 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-no-proof: yes"></span><span
+ lang=IN style="FONT-SIZE: 10.5pt">
+  </span><span lang=IN style="FONT-SIZE: 10.5pt">Ahad, 19 September
+2004/04 Sya'ban 1425<span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Brosur no. : 1242/1282/SI
+
+  </span></p>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+
+ embed; DIRECTION: ltr; TEXT-ALIGN: center; MARGIN: 12pt 0cm 6pt"><span lang=IN style="FONT-SIZE: 18pt; FONT-FAMILY:
+
+ 'Times New Roman','serif'; mso-ascii-theme-font: minor-bidi; mso-hansi-theme-font: minor-bidi; mso-bidi-theme-font: minor-bidi">Tarikh Nabi Muhammad SAW (ke-134)</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><span lang=IN>Perang
+Thaif.</span></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Walaupun
+perang Hunain telah selesai, dan sebagian tentara musyrikin sudah menyerah, tetapi
+pengejaran terhadap mereka yang belum menyerah tetap dilakukan pula, karena
+pimpinan mereka yang tertinggi belum menyerah, bahkan melarikan diri ke Thaif,
+yaitu Malik bin 'Auf An-Nashriy.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Setelah
+Nabi SAW mengetahui bahwa Malik bin 'Auf melarikan diri bersama pengikutnya
+qabilah Tsaqif ke Thaif, dan mereka berlindung di sana, maka beliau
+memerintahkan kepada tentara muslimin untuk mengejar mereka ke Thaif.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Nabi
+bersama tentara kaum muslimin dari Hunain terus menuju ke Thaif. Di tengah
+perjalanan, beliau dan tentaranya melihat sebuah benteng yang kuat milik Malik
+bin 'Auf. Ketika itu di dalam benteng telah sunyi-senyap, maka benteng itu lalu
+dirobohkan. Dalam perjalanan selanjutnya mereka melewati sebuah kebun milik
+salah seorang dari banu Tsaqif. Pemiliknya disuruh untuk keluar, kalau tidak
+mau keluar maka kebun itu akan dibakar. Ternyata orang tersebut tidak mau
+keluar, dan tetap bertahan di dalam. Maka Nabi SAW memerintahkan kepada tentara
+Islam untuk membakar kebun tersebut. [Nuurul Yaqiin : 211]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sesudah
+itu Nabi SAW bersama tentara Islam melanjutkan perjalanan ke Thaif. Setelah
+tiba di Thaif, ternyata Malik bin 'Auf bersama pengikutnya telah lebih dulu
+masuk ke dalam benteng yang kokoh kuat. Dan ketika itu mereka masih mempunyai
+persediaan bahan makanan yang cukup untuk bertahan di dalam benteng selama
+setahun. Dan mereka pun masih mempunyai perlengkapan perang yang cukup untuk
+bertempur melawan tentara Islam.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Nabi SAW dan tentara muslimin berhenti di suatu tempat, lalu beliau menyusun
+dan mengatur barisan kaum muslimin. Di tempat itu pula beliau memerintahkan
+supaya didirikan tempat untuk mengerjakan shalat, dan di sinilah kemudian
+didirikan sebuah masjid yang dikenal dengan masjid Thaif.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><span lang=IN>Pengepungan
+benteng Thaif</span></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Pada
+waktu itu para pengawal benteng telah memulai mengadakan serangan hebat
+terhadap angkatan perang kaum muslimin yang sedang mengatur pertahanan. Mereka
+memanah dengan gencar ke arah tentara Islam, sehingga ketika itu banyak yang
+terkena dan mendapat luka-luka. Menurut riwayat seketika itu ada dua belas
+tentara Islam yang tewas. [Nuurul Yaqiin : 211]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sekalipun
+demikian tentara muslimin dengan gagah berani terus bergerak mengadakan
+perlawanan.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Pada
+suatu hari shahabat Khalid bin Walid melakukan tipu daya terhadap mereka, yaitu
+menantang kepada tentara musuh dengan suara yang lantang, katanya, "Siapa
+diantara kalian yang berani berperang tanding dengan kami ?". Demikian
+kata-kata itu diserukan berulang-ulang, namun tidak seorangpun yang menyahutnya
+dan menampakkan dirinya. Setelah Khalid bin Walid diam, tidak menyerukan
+tantangannya lagi, lalu 'Abdu Yalil, seorang pembesar dari banu Tsaqif, di atas
+benteng pertahanannya berkata dengan suara yang lantang juga :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">لاَ
+يَنْزِلُ
+اِلَيْكَ
+مِنَّا
+اَحَدٌ وَ ل?كِنْ
+نُقِيْمُ فِى
+حِصْنِنَا
+فَاِنَّ
+فِيْهِ مِنَ
+الطَّعَامِ
+مَا
+يَكْفِيْنَا سِنِيْنَ،
+فَاِنْ
+اَقَمْتَ
+حَتَّى
+يَفْنَى ه?ذَا
+الطَّعَامُ
+خَرَجْنَا
+اِلَيْكَ
+بِاَسْيَافِنَا
+جَمِيْعًا
+حَتَّى
+نَمُوْتَ عَنْ
+ا?خِرِنَا</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+نور اليقين: 211</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Tidak
+akan ada seorang pun dari kami yang akan turun keluar dari benteng menemuimu,
+tetapi kami akan tetap bertahan di dalam benteng, karena di dalamnya telah
+tersedia cukup makanan untuk beberapa tahun. Jika kalian tetap mengepung,
+silakan mengepung. Dan jika persediaan kami telah habis, barulah kami akan
+keluar dari benteng dengan pedang dan akan melawan kalian sampai mati semua !</span></i><span
+ lang=IN>. [Nuurul Yaqiin : 211]</span><span lang=AR-SA dir=rtl
+ style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Tentara
+Islam terus berusaha menggempur dan merebut benteng yang kokoh dan kuat itu,
+tetapi selalu menemui kegagalan. Kemudian Nabi SAW memerintahkan supaya
+menggunakan <i>manjanik</i> dan <i>dabbaabah</i> (alat pelempar jarak jauh yang
+berperisai untuk berlindung, semacam tank jaman sekarang).</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Dari
+jarak jauh, dilemparkan peluru-peluru manjanik dengan tidak henti-hentinya, dan
+dengan alat perang tersebut pasukan muslimin bisa mendekati tembok benteng yang
+kokoh kuat itu, lalu berusaha masuk dengan cara melubangi sebagian benteng
+tersebut. Tetapi maksud itu belum juga berhasil, setiap kali mereka mendekat
+tembok, pasukan pengawal benteng melemparkan besi-besi yang telah dibakar dengan
+api ke arah pasukan muslimin. Akhirnya tentara muslimin mengundurkan diri.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Dan
+ketika tentara muslimin mengundurkan diri, mereka terus dihujani panah dari
+benteng, sehingga pasukan muslimin betul-betul menghadapi perlawanan yang
+berat. Sekalipun demikian semangat perang kaum muslimin tetap berkobar dan
+tetap berusaha mengadakan perlawanan sampai titik darah penghabisan.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><span lang=IN>Pengepungan
+benteng Thaif dihentikan.</span></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Berhubung
+dengan gagalnya usaha menyerang dan menyerbu benteng Thaif, maka Nabi SAW
+mengambil tindakan lain. Nabi SAW memerintahkan supaya pengepungan terhadap
+benteng Thaif dihentikan. Kemudian beliau memerintahkan kepada tentara muslimin
+supaya menebang dan memotong pohon-pohon kurma orang-orang Tsaqif dan
+membakarnya, demikian pula pohon-pohon anggur mereka, agar mereka mau keluar
+menyerang kaum muslimin. Perintah Nabi SAW ini lalu segera dilaksanakan,
+sehingga banyak kebun-kebun anggur dan pohon-pohon kurma kaum Tsaqif yang
+ditebang dan dibakar.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Karena
+kebun-kebun anggur dan kurma mereka itu sebagai sumber penghasilan penduduk
+Thaif, maka setelah banyak yang ditebang dan dibakar, barulah sebagian dari
+mereka mulai insyaf, bahwa jika permusuhan itu diterus-teruskan, tentu
+kebun-kebun yang menjadi sumber penghasilan mereka itu akan punah. Kemudian
+dari benteng ada yang menyerukan, "Atas nama Allah dan untuk menjaga
+persaudaraan, maka penebangan dan pembakaran kebun-kebun kurma dan kebun-kebun
+anggur itu supaya dihentikan". Kemudian Nabi SAW memerintahkan kepada
+seorang penyeru supaya menyerukan, "Siapasaja yang mau meninggalkan
+benteng dan turun, maka ia aman". Maka pada waktu itu turunlah dua puluh
+orang lebih dari benteng tersebut datang kepada Nabi SAW.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><b><span lang=IN>Tentara
+Islam meninggalkan Thaif.</span></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sesudah
+lebih kurang 18 hari lamanya Nabi SAW dan tentaranya mengepung benteng Thaif
+tersebut, usaha untuk menggempur dan menyerbu benteng itu selalu gagal, padahal
+bulan Haram sudah hampir tiba, maka Nabi SAW berpendapat, bahwa untuk membuka
+dan menaklukkan kaum Tsaqif itu memang belum diijinkan oleh Allah SWT. Maka akhirnya
+Nabi SAW memerintahkan kepada 'Umar bin Khaththab agar mengumumkan kepada
+segenap tentara muslimin untuk berkemas, bersiap meninggalkan Thaif. Pengumumam
+ini diprotes oleh sebagian tentara kaum muslimin, mereka berkata, "Apakah
+kita akan kembali, padahal kota Thaif belum ditaklukkan ?".</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Mendengar
+yang demikain itu Nabi SAW lalu bersabda, "Ya, baiklah kamu bersiap untuk
+berperang lagi". Lalu mereka berperang lagi, menyerbu benteng yang begitu
+kuat, besar dan tinggi itu. Namun angkatan perang muslimin terus-menerus
+dihujani panah, hingga banyak yang terluka.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Kemudian
+Nabi SAW meminta pendapat kepada Naufal bin Mu?wiyah Ad-Dailiy (seorang
+'Arab yang paham thabiat kaum Tsaqif), tentang cara yang sebaiknya, yakni
+"Tetap mengepungnya, atau meninggalkannya". Lalu Naufal menyampaikan
+pendapatnya :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">يَا
+رَسُوْلَ
+اللهِ
+ثَعْلَبٌ فِى
+جُحْرٍ، اِنْ
+اَقَمْتَ
+اَخَذْتَهُ
+وَ اِنْ
+تَرَكْتَهُ
+لَمْ
+يَضُرَّكَ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+نور اليقين: 211</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Ya
+Rasulullah, kaum banu Tsaqif itu seperti binatang tsa'lab (musang), di dalam lubangnya.
+Jika engkau menunggunya, berarti engkau menangkapnya. Dan jika engkau
+tinggalkan, mereka tidak akan membahayakan engkau</span></i><span lang=IN>.
+[Nuurul Yaqiin : 211]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Akhirnya
+Nabi SAW mengambil keputusan untuk meninggalkan mereka dan memerintahkan kaum
+muslimin supaya meninggalkan Thaif. Maka perintah Nabi SAW yang kedua ini
+mereka thaati, mereka lalu bersiap meninggalkan Thaif dengan riang-gembira.
+Setelah Nabi SAW melihat keadaan tentaranya yang demikian itu, beliau lalu
+tersenyum.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Bukhari
+meriwayatkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+عَبْدِ اللهِ
+بْنِ عَمْرٍو
+قَالَ لَمَّا
+حَاصَرَ
+رَسُوْلُ
+اللهِ ص
+الطَّائِفَ
+فَلَمْ
+يَنَلْ
+مِنْهُمْ
+شَيْئًا.
+قَالَ: اِنَّا
+قَافِلُوْنَ
+اِنْ شَاءَ
+اللهُ،
+فَثَقُلَ عَلَيْهِمْ
+وَ قَالُوْا:
+نَذْهَبُ وَ
+لاَ نَفْتَحُهُ.
+وَ قَالَ
+مَرَّةً:
+نَقْفُلُ.
+فَقَالَ:
+اُغْدُوْا
+عَلَى
+اْلقِتَالِ،
+فَغَدَوْا فَاَصَابَهُمْ
+جِرَاحٌ.
+فَقَالَ:
+اِنَّا قَافِلُوْنَ
+غَدًا اِنْ
+شَاءَ اللهُ.
+فَاَعْجَبَهُمْ
+فَضَحِكَ
+النَّبِيُّ ص</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 102</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+'Abdullah bin 'Amr, ia berkata : Ketika Rasulullah SAW mengepung Thaif, beliau
+tidak memperoleh sesuatupun dari mereka. Beliau bersabda, "Insya Allah
+kita akan pulang". Lalu kaum muslimin merasa keberatan dan mereka berkata,
+"Kita akan pergi, padahal belum dapat menaklukkannya". (Dan pada lain
+kali beliau bersabda, "Kita akan pulang"). Lalu beliau bersabda,
+"Kalau begitu berperanglah lagi besok pagi". Maka pada pagi harinya
+mereka berperang lagi, namun mereka mendapat luka-luka. Beliau bersabda,
+"Insya Allah kita akan pulang besok pagi". Maka hal itu
+menggembirakan mereka, lalu Nabi SAW tersenyum</span></i><span lang=IN>. [HR.
+Bukhari juz 5, hal. 102]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Sesudah
+itu, diantara tentara Islam ada yang mengemukakan kepada Nabi SAW, bahwa
+sudilah kiranya beliau mendoakan kepada kaum Tsaqif dan Thaif, kemudian beliau
+berdoa :</span></p>
+
+<p class=MsoNormal align=center dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: center"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">اَللّهُمَّ
+اهْدِ
+ثَقِيْفًا وَ
+ائْتِ بِهِمْ
+مُسْلِمِيْنَ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+نور اليقين: 211</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Ya
+Allah, tunjukilah kaum Tsaqif dan datangkanlah mereka itu sebagai orang-orang
+Islam</span></i><span lang=IN>. [Nuurul Yaqiin : 211]</span><span lang=AR-SA
+ dir=rtl style="FONT-SIZE: 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Selanjutnya
+Nabi SAW bersama tentara muslimin meninggalkan Thaif dan kembali ke dusun
+Ji'raanah. Di Ji'raanah tersebut beliau bersama tentara muslimin lalu mengurus
+dan menyelesaikan urusan harta jarahan dan para tawanan yang didapatkan dari
+peperangan Hunain.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Harta
+jarahan itu oleh beliau dibagi-bagikan kepada orang-orang yang berhaq
+menerimanya, dengan cara yang adil dan seksama. Kepada orang-orang yang baru
+saja memeluk Islam (muallaf) diberi bagian lebih banyak.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Bukhari
+meriwayatkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+عَبْدِ اللهِ
+رض قَالَ:
+لَمَّا كَانَ
+يَوْمُ
+حُنَيْنٍ ا?ثَرَ
+النَّبِيُّ ص
+نَاسًا
+اَعْطَى
+اْلاَقْرَعَ
+مِائَةً مِنَ
+اْلاِبِلِ وَ
+اَعْطَى
+عُيَيْنَةَ
+مِثْلَ ذ?لِكَ
+وَ اَعْطَى
+نَاسًا.
+فَقَالَ
+رَجُلٌ: مَا اُرِيْدَ
+بِه?ذِهِ
+اْلقِسْمَةِ
+وَجْهُ اللهِ.
+فَقُلْتُ: َلاُخْبِرَنَّ
+النَّبِيَّ ص.
+قَالَ: رَحِمَ
+اللهُ
+مُوْسَى،
+قَدْ
+اُوْذِيَ
+بِاَكْثَرَ مِنْ
+ه?ذَا
+فَصَبَرَ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 106</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+'Abdullah (bin Mas'ud) RA, ia berkata : Ketika perang Hunain, Nabi SAW
+mengutamakan beberapa orang. Beliau memberi kepada Aqra' seratus unta, beliau
+memberi 'Uyainah sebanyak itu juga dan beliau memberi beberapa orang. Lalu ada
+seorang laki-laki berkata, "Pembagian ini tidak dikehendaki untuk mencari
+keridlaan Allah". Lalu saya berkata, "Sungguh saya akan
+memberitahukan kepada Nabi SAW". Beliau bersabda, "Semoga Allah
+memberikan rahmat kepada Musa, sungguh ia telah disakiti lebih banyak daripada
+ini, tetapi ia bershabar"</span></i><span lang=IN>. [HR. Bukhari juz 5,
+hal. 106]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=AR-SA style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt">عَنْ
+اَنَسِ بْنِ
+مَالِكٍ رض
+قَالَ: قَالَ
+نَاسٌ مِنَ
+اْلاَنْصَارِ
+حِيْنَ
+اَفَاءَ اللهُ
+عَلَى
+رَسُوْلِهِ ص
+مَا اَفَاءَ
+مِنْ اَمْوَالِ
+هَوَازِنَ
+فَطَفِقَ
+النَّبِيُّ ص
+يُعْطِى
+رِجَالاً
+اْلمِائَةَ
+مِنَ اْلاِبِلِ,
+فَقَالُوْا:
+يَغْفِرُ
+اللهُ
+لِرَسُوْلِ
+اللهِ ص.
+يُعْطِى
+قُرَيْشًا وَ
+يَتْرُكُنَا
+وَ سُيُوْفُنْا
+تَقْطُرُ
+مِنْ
+دِمَائِهِمْ.
+قَالَ اَنَسٌ
+فَحُدّثَ
+رَسُوْلُ
+اللهِ ص بِمَقَالَتِهِمْ.
+فَاَرْسَلَ
+اِلَى
+اْلاَنْصَارِ،
+فَجَمَعَهُمْ
+فِى قُبَّةٍ
+مِنْ اَدَمٍ
+وَ لَمْ يَدْعُ
+مَعَهُمْ
+غَيْرَهُمْ.
+فَلَمَّا
+اجْتَمَعُوْا
+قَامَ
+النَّبِيُّ ص
+فَقَالَ: مَا
+حَدِيْثٌ
+بَلَغَنِى
+عَنْكُمْ؟.
+فَقَالَ
+فُقَهَاءُ
+اْلاَنْصَارِ:
+اَمَّا
+رُؤَسَاؤُنَا
+يَا رَسُوْلَ
+اللهِ فَلَمْ
+يَقُوْلُوْا
+شَيْئًا. وَ
+اَمَّا نَاسٌ
+مِنَّا
+حَدِيْثَةٌ
+اَسْنَانُهُمْ
+فَقَالُوْا:
+يَغْفِرُ
+اللهُ
+لِرَسُوْلِ
+اللهِ ص
+يُعْطِى
+قُرَيْشًا وَ
+يَتْرُكُنَا
+وَ سُيُوْفُنَا
+تَقْتُرُ
+مِنْ
+دِمَاءِهِمْ.
+فَقَالَ
+النَّبِيُّ ص:
+فَاِنّى
+اُعْطِى رِجَالاً
+حَدِيْثِى
+عَهْدٍ
+بِكُفْرٍ
+اَتَاَلَّفُهُمْ.
+اَمَا
+تَرْضَوْنَ
+اَنْ
+يَذْهَبَ النَّاسُ
+بِاْلاَمْوَالِ
+وَ
+تَذْهَبُوْنَ
+بِالنَّبِيّ
+ص اِلىَ
+رِحَالِكُمْ،
+فَوَ اللهِ
+لَمَا تَنْقَلِبُوْنَ
+بِهِ خَيْرٌ
+مِمَّا
+يَنْقَلِبُوْنَ
+بِهِ.
+قَالُوْا: يَا
+رَسُوْلَ
+اللهِ، قَدْ
+رَضِيْنَا.
+فَقَالَ
+لَهُمُ
+النَّبِيُّ ص:
+سَتَجِدُوْنَ
+اُثْرَةً
+شَدِيْدَةً
+فَاصْبِرُوْا
+حَتَّى
+تَلْقَوُا
+اللهَ وَ
+رَسُوْلَهُ ص.
+فَاِنّى
+عَلَى
+اْلحَوْضِ</span><span
+ lang=AR-SA style="FONT-SIZE: 18pt; FONT-FAMILY: 'Traditional Arabic'">.
+البخارى 5: 104</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><i><span lang=IN>Dari
+Anas bin Malik RA, ia berkata : Ketika Allah memberikan harta rampasan kepada
+rasul-Nya yaitu harta rampasan dari qabilah Hawazin, lalu Nabi SAW memberikan
+seratus unta kepada beberapa orang laki-laki, maka orang-orang Anshar berkata,
+"Semoga Allah mengampuni Rasulullah SAW, beliau memberi kepada orang-orang
+Quraisy, dan tidak memberi kepada kami, padahal pedang-pedang kami meneteskan
+darah mereka". Anas berkata, "Lalu Rasulullah SAW diberi tahu tentang
+perkataan mereka itu. Kemudian beliau mengirim utusan kepada orang-orang
+Anshar, lalu beliau mengumpulkan mereka dalam sebuah tenda dari kulit, dan
+beliau tidak mengundang selain mereka". Setelah mereka berkumpul, lalu Nabi
+SAW berdiri dan bertanya, "Perkataan apakah yang sampai kepadaku tentang
+kalian ?". Orang-orang pandai dari orang-orang Anshar menjawab,
+"Wahai Rasulullah, adapun para pemimpin kami, maka mereka tidak mengatakan
+apapun. Tetapi sebagian orang-orang diantara kami yang masih berusia muda,
+mereka berkata : Semoga Allah mengampuni Rasulullah SAW, beliau memberi kepada
+orang-orang Quraisy, sedangkan beliau tidak memberi kepada kami, padahal
+pedang-pedang kami meneteskan darah mereka". Lalu Nabi SAW bersabda, "Sesungguhnya
+aku memberikan kepada beberapa orang laki-laki yang baru saja meninggalkan
+kekafiran untuk menjinakkan hati mereka. Apakah kalian tidak ridla, orang-orang
+pergi dengan membawa harta benda, sedangkan kalian pergi dengan membawa Nabi
+SAW ke rumah kalian ?. Demi Allah, sesungguhnya yang kalian bawa pulang adalah
+lebih baik daripada sesuatu yang mereka bawa pulang". Mereka berkata,
+"Ya Rasulullah, kami ridla". Lalu Nabi SAW bersabda kepada mereka,
+"Kalian akan menemui (suatu masa) orang-orang sangat mementingkan diri
+sendiri terhadap harta, maka bershabarlah hingga kalian bertemu dengan Allah
+dan rasul-Nya, sesungguhnya aku di atas telaga".</span></i><span lang=IN>
+[HR. Bukhari juz 5, hal. 104]</span><span lang=AR-SA dir=rtl style="FONT-SIZE:
+ 22pt; FONT-FAMILY: 'Traditional Arabic'; mso-ansi-font-size: 11.0pt"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>Menurut
+riwayat bahwa tentara Islam yang syahid dalam perang Thaif ini ada dua belas
+orang : 1. Said bin Said, 2. Urfuthah bin Jannab, 3. 'Abdullah bin Abu Bakar
+Ash-Shiddiq (dia terkena panah dalam perang Thaif, namun meninggal pada masa
+Khalifah Abu Bakar), 4. 'Abdullah bin Abu Umayyah, 5. 'Abdullah bin 'Amir, 6.
+Saib bin Harits dan 7. 'Abdullah bin Harits, mereka ini dari kaum Quraisy. Lalu
+8. Tsabit bin Al-Jadza'i, 9. Harits bin Sahal, 10. Mundzir bin 'Abdullah dan
+11. Ruqaim bin Tsabit, mereka ini dari kaum Anshar. Dan seorang lagi : 12.
+Juhailah bin 'Abdullah dari banu Sa'ad bin Laits. [Ibnu Hisyam juz 5, hal. 159]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; TEXT-KASHIDA: 0%; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-JUSTIFY: kashida"><span lang=IN>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: right"><span lang=IN>Bersambung ...................</span></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>

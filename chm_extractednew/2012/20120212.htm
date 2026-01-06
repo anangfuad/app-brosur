@@ -1,0 +1,843 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:DaunPenh;
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:DaunPenh;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:18.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:DaunPenh;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:DaunPenh;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text 3 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;
+	mso-bidi-font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:Header;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:Footer;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;}
+span.BodyText3Char
+	{mso-style-name:"Body Text 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Body Text 3";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-bidi-font-family:DaunPenh;}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: center"><span style="FONT-SIZE:
+ 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-no-proof: yes"></span><span
+ style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">
+  </span><span style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Ahad,
+12 Pebruari 2012/</span><span style="FONT-SIZE:
+ 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 18.0pt; mso-fareast-language: ZH-CN">1</span><span
+
+ style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-language: ZH-CN">9 </span><span style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Rabi;ul
+awwal 1433<span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Brosur No. : 1589/16</span><span style="FONT-SIZE:
+ 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 18.0pt; mso-fareast-language: ZH-CN">2</span><span
+
+ style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-language: ZH-CN">9/</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">IA
+
+</span></p>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+
+ embed; DIRECTION: ltr; TEXT-ALIGN: center; MARGIN: 6pt 0cm"><span style="FONT-SIZE:
+ 16pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 18.0pt">Islam Agama Tauhid (ke-39)</span><span lang=AR-SA
+ dir=rtl style="FONT-SIZE: 18pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-font-size: 16.0pt"></span></p>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+
+ embed; DIRECTION: ltr; TEXT-ALIGN: center; MARGIN: 6pt 0cm"><b><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Nama-nama
+Allah yang terbaik (Al-Asmaaul Husnaa)</span></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Allah
+SWT berfirman :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM: 6pt; TEXT-ALIGN: justify"><span
+ lang=AR-SA style="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: black">وَ
+للهِ
+اْلاسْمَآءُ
+الْحُسْنى
+فَادْعُوْهُ
+بِهَا وَ
+ذَرُوا
+الَّذِيْنَ
+يُلْحِدُوْنَ
+فِيْ
+اَسْمَآئِه،
+سَيُجْزَوْنَ
+مَا كَانُوْا
+يَعْمَلُوْن</span><span
+ lang=AR-SA style="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: black">َ</span><span
+ lang=AR-SA style
+="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; mso-hansi-font-family: Arial; mso-ascii-font-family: Arial">.
+الاعراف: 180</span><span dir=ltr
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; COLOR: black">Hanya milik Allah Al-Asmaaul-Husnaa, maka bermohonlah kepada-Nya
+dengan menyebut asmaaulhusna itu dan tinggalkanlah orang-orang yang menyimpang
+dari kebenaran dalam (menyebut) nama-nama-Nya. Nanti mereka akan mendapat
+balasan terhadap apa yang telah mereka kerjakan.</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"> [QS. Al-A'raaf :
+180]<span lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM: 6pt; TEXT-ALIGN: justify"><span
+ lang=AR-SA style="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: black">قُلِ
+ادْعُوا
+اللهَ اَوِ
+ادْعُوا
+الرَّحْمنَ،
+اَيًّا مَّا
+تَدْعُوْا
+فَلَهُ
+اْلاَسْمَآءُ
+الْحُسْنى،
+وَلاَ
+تَجْهَرْ
+بِصَلاَتِكَ
+وَلاَ
+تُخَافِتْ
+بِهَا
+وَابْتَغِ
+بَيْنَ ذلِكَ
+سَبِيْلاً</span><span
+ lang=AR-SA style="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: black">.
+الاسراء: 110</span><span dir=ltr
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; COLOR: black">Katakanlah, "Serulah Allah atau serulah Ar-Rahman. Dengan
+nama yang mana saja kamu seru, Dia mempunyai Al Asmaaul-Husnaa (nama-nama yang
+terbaik), dan janganlah kamu mengeraskan suaramu dalam shalatmu dan janganlah
+pula merendahkannya dan carilah jalan tengah di antara kedua itu"</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"> [QS. Al-Israa' :
+110]<span lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN: justify; mso-pagination: none"><span
+ lang=AR-SA style="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: black">هُوَ
+اللهُ
+الْخَالِقُ
+الْبَارِئُ
+الْمُصَوّرُ
+لَهُ
+اْلاسْمَآءُ
+الْحُسْنى،
+يُسَبّحُ لَه
+مَا فِي
+السَّموتِ وَ
+اْلارْضِ،
+وَهُوَ
+الْعَزِيْزُ
+الْحَكِيْمُ</span><span
+ lang=AR-SA style="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: black">.
+الحشر: </span><span dir=ltr style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'; COLOR: black">Dia-lah Allah Yang Menciptakan, Yang Mengadakan, Yang Membentuk
+Rupa, Yang Mempunyai Nama-Nama Yang Paling baik. Bertasbih kepada-Nya apa yang
+ada di langit dan di bumi. Dan Dia-lah Yang Maha Perkasa lagi Maha Bijaksana.</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"> [QS. Al-Hasyr : 24]<span
+ lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><b><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Bilangan
+nama-nama Allah yang disabdakan oleh Nabi SAW bahwa barangsiapa yang menjaganya
+akan masuk surga.</span></b></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN: justify"><span lang=AR-SA
+ style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">عَنْ
+اَبِي
+هُرَيْرَةَ
+اَنَّ
+رَسُوْلَ اللهِ
+ص قَالَ:
+اِنَّ للهِ
+تِسْعَةً وَ
+تِسْعِيْنَ
+اسْمًا
+مِائَةً
+اِلاَّ
+وَاحِدًا
+مَنْ اَحْصَاهَا
+دَخَلَ
+الْجَنَّةَ</span><span
+ lang=AR-SA style
+ ="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">. البخارى 8:
+169</span><span dir=ltr style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Dari
+Abu Hurairah, bahwasanya Rasulullah SAW bersabda, "Sesungguhnya Allah
+mempunyai sembilan puluh sembilan nama, seratus kurang satu, barangsiapa yang
+menjaganya, ia masuk surga"</span></i><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'">. [HR. Bukhari juz 8, hal. 169]<span
+ lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM: 6pt; TEXT-ALIGN: justify"><span
+ lang=AR-SA style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">عَنْ
+اَبِي
+هُرَيْرَةَ
+عَنِ
+النَّبِيّ ص
+قَالَ: للهِ
+تِسْعَةٌ وَ
+تِسْعُوْنَ
+اِسْمًا مَنْ
+اَحْصَاهَا
+دَخَلَ
+الْجَنَّةَ.
+وَ اِنَّ اللهَ
+وِتْرٌ
+يُحِبُّ
+الْوِتْرَ</span><span
+ lang=AR-SA style
+ ="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">. مسلم 4: 2062</span><span
+ dir=ltr style="FONT-SIZE: 24pt; FONT-FAMILY: 'Arial','sans-serif'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Dari
+Abu Hurairah, dari Nabi SAW, beliau bersabda, "Allah mempunyai sembilan
+puluh sembilan nama. Barangsiapa menjaganya, ia masuk surga. Dan sesungguhnya
+Allah itu ganjil, suka kepada yang ganjil".</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"> [HR. Muslim juz 4,
+hal. 2062]<span lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN: justify; mso-pagination: none"><span
+ lang=AR-SA style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">عَنْ
+اَبِي
+هُرَيْرَةَ
+قَالَ: قَالَ
+رَسُوْلُ
+اللهِ ص:
+اِنَّ للهِ
+تَسْعَةً وَ
+تِسْعِيْنَ
+اِسْمًا
+مِائَةً
+غَيْرَ
+وَاحِدَةٍ
+مَنْ اَحْصَاهَا
+دَخَلَ
+الْجَنَّةَ. هُوَ
+اللهُ
+الَّذِيْ لاَ
+اِلهَ اِلاَّ
+هُوَ الرَّحْمنُ
+الرَّحِيْمُ
+الْمَلِكُ
+الْقُدُّوْسُ
+السَّلاَمُ
+الْمُؤْمِنُ
+الْمُهَيْمِنُ
+الْْعَزِيْزُ
+الْجَبَّارُ
+الْمُتَكَبّرُ
+الْخَالِقُ
+الْبَارِئُ
+الْمُصَوّرُ
+الْغَفَّارُ
+الْقَهَّارُ
+الْوَهَّابُ
+الرَّزَّاقُ
+الْفَتَّاحُ
+الْعَلِيْمُ
+الْقَابِضُ
+الْبَاسِطُ
+الْخَافِضُ
+الرَّافِعُ
+الْمُعِزُّ
+الْمُذِلُّ
+السَّمِيْعُ
+الْبَصِيْرُ
+الْحَكَمُ الْعَدْلُ
+اللَّطِيْفُ
+الْخَبِيْرُ
+الْحَلِيْمُ
+الْعَظِيْمُ
+الْغَفُوْرُ
+الشَّكُوْرُ
+الْعَلِيُّ
+الْكَبِيْرُ
+الْحَفِيْظُ الْمُقِيْتُ
+الْحَسِيْبُ
+الْجَلِيْلُ
+الْكَرِيْمُ
+الرَّقِيْبُ
+الْمُجِيْبُ
+الْوَاسِعُ
+الْحَكِيْمُ
+الْوَدُوْدُ
+الْمَجِيْدُ
+الْبَاعِثُ
+الشَّهِيْدُ
+الْحَقُّ
+الْوَكِيْلُ
+الْقَوِيُّ
+الْمَتِيْنُ
+الْوَلِيُّ
+الْحَمِيْدُ
+الْمُحْصِي
+الْمُبْدِئُ
+الْمُعِيْدُ
+الْمُحْيِي الْمُمِيْتُ
+الْحَيُّ
+الْقَيُّوْمُ
+الْوَاجِدُ
+الْمَاجِدُ
+الْوَاحِدُ
+الصَّمَدُ
+الْقَادِرُ
+الْمُقْتَدِرُ
+الْمُقَدّمُ
+الْمُؤَخّرُ
+اْلاَوَّلُ
+اْلآخِرُ
+الظَّاهِرُ
+الْبَاطِنُ
+الْواَلِي الْمُتَعَالِي
+الْبَرُّ
+التَّوَّابُ
+الْمُنْتَقِمُ
+الْعَفُوُّ
+الرَّؤُوْفُ
+مَالِكُ
+الْمُلْكِ
+ذُو
+الْجَلاَلِ
+وَاْلاِكْرَامِ
+الْمُقْسِطُ
+الْجَامِعُ الْغَنِيُّ
+الْمُغْنِي
+الْمَانِعُ
+الضَّارُّ
+النَّافِعُ
+النُّوْرُ
+الْهَادِي
+الْبَدِيْعُ
+الْبَاقِي
+الْوَارِثُ
+الرَّشِيْدُ
+الصَّبُوْرُ</span><span
+ lang=AR-SA style
+ ="FONT-SIZE: 20pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">. الترمذى 5:
+192، رقم: 3574</span><span dir=ltr style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Arial','sans-serif'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Dari
+Abu Hurairah, ia berkata : Rasulullah SAW bersabda, "Sesungguhnya Allah
+mempunyai sembilan puluh sembilan nama, seratus kurang satu. Barangsiapa
+menjaganya, ia masuk surga". Dialah 1. Allooh, yang tidak ada Tuhan selain
+Dia, 2. Ar-Rohmaan (Maha Pengasih), 3. Ar-Rohiim (Maha penyayang), 4. Al-Malik
+(Maha Raja), 5. Al-Qudduus (Maha Suci), 6. As-Salaam (Maha Pemberi
+kesejahteraan), 7. Al-Mu'min (Maha Pemberi kemanan), 8. Al-Muhaimin (Maha
+Memelihara), 9. Al-'Aziiz (Maha Perkasa), 10. Al-Jabbaar (Maha Memaksa), 11.
+Al-Mutakabbir (Maha Memiliki kebesaran), 12. Al-Khooliq (Maha Pencipta),
+13.<span style="mso-spacerun: yes">&nbsp; </span>Al-Baariu (Maha Mengadakan),
+14. Al-Mushowwir (Maha Membuat bentuk), 15. Al-Ghoffaar (Maha Pengampun), 16.
+Al-Qohhaar (Maha Perkasa), 17. Al-Wahhaab (Maha Pemberi karunia), 18. Ar-Rozzaaq
+(Maha Pemberi rezqi), 19. Al-Fattaah (Maha Pembuka), 20. Al-'Aliim (Maha
+Mengetahui), 21. Al-Qoobidl (Maha Menyempitkan), 22. Al-Baasith (Maha
+Melapangkan), 23. Al-Khoofidl (Maha Merendahkan), 24. Ar-Roofi' (Maha
+Meninggikan), 25. Al-Mu'izz (Maha Memuliakan), 26. Al-Mudzill (Maha
+Menghinakan), 27. As-Samii' (Maha Mendengar), 28. Al-Bashiir (Maha Melihat),
+29. Al-Hakam (Maha Menetapkan), 30. Al-'Adlu (Maha 'Adil), 31. Al-Lathiif (Maha
+Lembut), 32. Al-Khobiir (Maha Mengetahui), 33. Al-Haliim (Maha Penyantun), 34.
+Al-'Adhiim (Maha Agung), 35. Al-Ghofuur (Maha Pengampun), 36. Asy-Syakuur (Maha
+Pembalas jasa), 37. Al-'Aliyyu (Maha Tinggi), 38. Al-Kabiir (Maha Besar), 39.
+Al-Hafiidh (Maha Penjaga), 40. Al-Muqiit (Maha Memelihara), 41. Al-Hasiib (Maha
+Pembuat perhitungan), 42. Al-Jaliil (Maha Memiliki Keagungan), 43. Al-Kariim
+(Maha Mulia), 44. Ar-Roqiib (Maha Mengawasi), 45. Al-Mujiib (Maha Mengabulkan),
+46. Al-Waasi' (Maha Luas), 47. Al-Hakiim (Maha Bijaksana), 48. Al-Waduud (Maha
+Pengasih), 49. Al-Majiid (Maha Mulia), 50. Al-Baa'its (Maha Membangkitkan), 51.
+Asy-Syahiid (Maha Menyaksikan), 52. Al-Haqq (Maha Benar), 53. Al-Wakiil (Maha
+Melindungi), 54. Al-Qowiy (Maha Kuat), 55. Al-Matiin (Maha Kokoh), 56.
+Al-Waliyyu (Maha Melindungi), 57. Al-Hamiid (Maha Terpuji), 58. Al-Muhshiy
+(Maha Menghitung), 59. Al-Mubdiu (Maha Memulai), 60. Al-Mu'iid (Maha
+Mengembalikan), 61. Al-Muhyiy (Maha Menghidupkan), 62. Al-Mumiit (Maha
+Mematikan), 63. Al-Hayyu (Maha Hidup), 64. Al-Qoyyuum (Maha Berdiri sendiri),
+65. Al-Waajid (Maha Menemukan), 66. Al-Maajid (Maha Mulia), 67. Al-Waahid (Maha
+Tunggal), 68. Ash-Shomad (Maha Dibutuhkan), 69. Al-Qoodir (Maha Kuasa), 70.
+Al-Muqtadir (Maha Berkuasa), 71. Al-Muqaddim (Maha Mendahulukan), 72.
+Al-Muakhkhir (Maha Mengakhirkan), 73. Al-Awwal (Maha Permulaan), 74. Al-Aakhir
+(Maha Akhir), 75. Adh-Dhoohir (Maha Tampak), 76. Al-Baathin (Maha Tersembunyi),
+77. Al-Waalii (Maha Menguasai), 78. Al-Muta'aalii (Maha Tinggi), 79. Al-Barru
+(Maha Dermawan), 80. At-Tawwaab (Maha Penerima taubat), 81. Al-Muntaqim (Maha
+Penyiksa), 82. Al-'Afwu (Maha Pema'af), 83. Ar-Ro-uuf (Maha Pengasih), 84.
+Maalikul Mulki (Maha Pemilik kerajaan), 85. Dzul Jalaali wal Ikroom (Maha
+Memiliki Keagungan dan Kemuliaan), 86. Al-Muqsith (Maha 'Adil), 87. Al-Jaami'
+(Maha Mengumpulkan), 88. Al-Ghoniyyu (Maha Kaya), 89. Al-Mughniyyu (Maha
+Pemberi kekayaan), 90. Al-Maani' (Maha Pencegah), 91. Adl-Dloorru (Maha Pemberi
+madlorot), 92. An-Naafi' (Maha Pemberi manfa'at), 93. An-Nuur (Maha Pemilik
+cahaya), 94. Al-Haadii (Maha Pemberi petunjuk), 95. Al-Badii' (Maha Pencipta),
+96. Al-Baaqii (Maha Kekal), 97. Al-Waarits (Maha Mewarisi), 98. Ar-Rasyiid
+(Maha Penuntun), 99. Ash-Shabuur (Maha Shabar).</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'"> [HR. Tirmidzi juz 5,
+hal. 192, no. 3574]<span lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">عَنْ
+اَبِي
+هُرَيْرَةَ
+اَنَّ
+رَسُوْلَ اللهِ
+ص قَالَ:
+اِنَّ للهِ
+تِسْعَةً وَ
+تِسْعِيْنَ
+اسْمًا،
+مِائَةً اِلاَّ
+وَاحِدًا،
+اِنَّهُ
+وِتْرٌ
+يُحِبُّ الْوِتْرَ،
+مَنْ
+حَفِظَهَا
+دَخَلَ
+الْجَنَّةَ
+وَ هِيَ:
+اللهُ،
+الْوَاحِدُ<span
+ style="COLOR: black">،
+الصَّمَدُ،
+الأَوَّلُ،
+الآخِرُ،
+الظَّاهِرُ،
+الْبَاطِنُ،
+الْخَالِقُ،
+الْبَارِئُ،
+الْمُصَوّرُ،
+الْمَلِكُ،
+الْحَقُّ، السَّلاَمُ،
+الْمُؤْمِنُ،
+الْمُهَيْمِنُ،
+الْعَزِيْزُ،
+الْجَبَّارُ،
+الْمُتَكَبّرُ،
+الرَّحْمنُ،
+الرَّحِيْمُ،
+اللَّطِيْفُ،
+الْخَبِيْرُ،
+السَّمِيْعُ،
+الْبَصِيْرُ،
+الْعَلِيْمُ،
+الْعَظِيْمُ،
+الْبَارُّ،
+الْمُتَعَالِ،
+الْجَلِيْلُ،
+الْجَمِيْلُ،
+الْحَيُّ،
+الْقَيُّوْمُ،
+الْقَادِرُ،
+الْقَاهِرُ،
+الْعَلِيُّ،
+الْحَكِيْمُ،
+الْقَرِيْبُ،
+الْمُجِيْبُ،
+الْغَنِيُّ،
+الْوَهَّابُ،
+الْوَدُوْدُ،
+الشَّكُوْرُ،
+الْمَاجِدُ،
+الْوَاجِدُ،
+الْوَالِي،
+الرَّاشِدُ،
+الْعَفُوُّ،
+الْغَفُوْرُ،
+الْحَلِيْمُ،
+الْكَرِيْمُ،
+التَّوَّابُ،
+الرَّبُّ،
+الْمَجِيْدُ،
+الْوَلِيُّ،
+الشَّهِيْدُ،
+الْمُبِيْنُ،
+الْبُرْهَانُ،
+الرَّؤُوْفُ
+الرَّحِيْمُ،
+الْمُبْدِئُ،
+الْمُعِيْدُ،
+الْبَاعِثُ،
+الْوَارِثُ،
+الْقَوِيُّ، الشَّدِيْدُ،
+الضَّارُّ،
+النَّافِعُ،
+الْبَاقِي،
+الْوَاقِي،
+الْخَافِضُ،
+الرَّافِعُ،
+الْقَابِضُ،
+الْبَاسِطُ،
+الْمُعِزُّ،
+الْمُذِلُّ،
+الْمُقْسِطُ،
+الرَّزَّاقُ،
+ذُو
+الْقُوَّةِ،
+الْمَتِيْنُ،
+الْقَائِمُ،
+الدَّائِمُ،
+الْحَافِظُ،
+الْوَكِيْلُ،
+الْفَاطِرُ،
+السَّامِعُ،
+الْمُعْطِي،
+الْمُحْيِي،
+الْمُمِيْتُ،
+الْمَانِعُ،
+الْجَامِعُ،
+الْهَادِي،
+الْكَافِي،
+الأَبَدُ،
+الْعَالِمُ،
+الصَّادِقُ،
+النُّوْرُ،
+الْمُنِيْرُ،
+التَّامُّ،
+الْقَدِيْمُ،
+الْوِتْرُ،
+الأَحَدُ
+الصَّمَدُ،
+الَّذِي لَمْ
+يَلِدْ وَلَمْ
+يُولَدْ
+وَلَمْ
+يَكُنْ لَهُ
+كُفُوًا اَحَدٌ</span>.
+ابن ماجه 2: 1269،
+رقم: 3861</span><span dir=ltr style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Dari
+Abu Hurairah, bahwasanya Rasulullah SAW bersabda, "Sesungguhnya Allah
+mempunyai sembilan puluh sembilan nama, seratus kurang satu. Sesungguhnya Dia
+Maha ganjil, suka kepada yang ganjil, barangsiapa yang menjaganya, ia masuk
+surga. Nama-nama itu adalah : 1. Allooh, 2. Al-Waahid (Maha Esa), 2. Ash-Shomad
+(Maha Dibutuhkan), 3. Al-Awwal (Maha Permulaan), 4. Al-Aakhir (Maha Akhir), 5.
+Adh-Dhoohir (Maha Tampak), 6. Al-Baathin (Maha Tersembunyi), 7. Al-Khooliq
+(Maha Pencipta), 8. Al-Baariu (Maha Mengadakan), 9. Al-Mushowwir (Maha Membuat
+bentuk), 10. Al-Malik (Maha Raja), 11. Al-Haqq (Maha Benar), 12. As-Salaam
+(Maha Pemberi kesejahteraan), 13. Al-Mu'min (Maha Pemberi keamanan), 14.
+Al-Muhaimin (Maha Memelihara), 15. Al-'Aziiz (Maha Perkasa), 16. Al-Jabbaar
+(Maha Memaksa), 17. Al-Mutakabbir (Maha Pemilik Kebesaran), 18. Ar-Rohmaan
+(Maha Pengasih), 19. Ar-Rohiim (Maha Penyayang), 20. Al-Lathiif (Maha Lembut),
+21. Al-Khobiir (Maha Mengetahui), 22. As-Samii' (Maha Mendengar), 23.
+Al-Bashiir (Maha Melihat), 24. Al-'Aliim (Maha Mengetahui), 25. Al-'Adhiim
+(Maha Agung), 26. Al-Baarr (Maha Dermawan), 27. Al-Muta'aali (Maha Tinggi), 28.
+Al-Jaliil (Maha Memiliki keagungan), 29. Al-Jamiil (Maha Indah), 30. Al-Hayyu
+(Maha Hidup), 31. Al-Qoyyuum (Maha Berdiri sendiri), 32. Al-Qoodir (Maha
+Kuasa), 33. Al-Qoohir (Maha Perkasa), 34. Al-'Aliy (Maha Tinggi), 35. Al-Hakiim
+(Maha Bijaksana), 36. Al-Qoriib (Maha Dekat), 37. Al-Mujiib (Maha Mengabulkan),
+38. Al-Ghoniy (Maha Kaya), 39. Al-Wahhaab (Maha Pemberi karunia), 40. Al-Waduud
+(Maha Pengasih), 41. Asy-Syakuur (Maha Pembalas jasa), 42. Al-Maajid (Maha
+Mulia), 43. Al-Waajid (Maha Menemukan), 44. Al-Waalii (Maha Menguasai), 45.
+Ar-Roosyid (Maha Penuntun), 46. Al-'Afuwwu (Maha Pema'af), 47. Al-Ghofuur (Maha
+Pengampun), 48. Al-Haliim (Maha Penyantun), 49. Al-Kariim (Maha Mulia), 50.
+At-Tawwaab (Maha Penerima taubat), 51. Ar-Robb (Maha Pemelihara), 52. Al-Majiid
+(Maha Mulia), 53. Al-Waliyy (Maha Melindungi), 54. Asy-Syahiid (Maha
+Menyaksikan), 55. Al-Mubiin (Maha Menerangkan), 56. Al-Burhaan (Maha Pemberi
+bukti), 57. Ar-Ro-uufur Rohiim (Maha Pengasih lagi Maha Penyayang), 58. Al-Mubdi'u
+(Maha Menciptakan), 59. Al-Mu'iidu (Maha Mengembalikan), 60. Al-Baa'its (Maha
+Membangkitkan), 61. Al-Waarits (Maha Mewarisi), 62. Al-Qowiyy (Maha Kuat), 63.
+Asy-Syadiid (Maha Keras), 64. Adl-Dloorr (Maha Memberi madlorot), 65. An-Naafi'
+(Maha Memberi manfa'at), 66. Al-Baaqii (Maha Kekal), 67. Al-Waaqii (Maha
+Pemelihara), 68. Al-Khoofidl (Maha Merendahkan), 69. Ar-Roofi' (Maha
+Meninggikan), 70. Al-Qoobidl (Maha Menyempitkan), 71. Al-Baasith (Maha
+Melapangkan), 72. Al-Mu'izz (Maha Memuliakan), 73. Al-Mudzillu (Maha
+Menghinakan), 74. Al-Muqsith (Maha Adil), 75. Ar-Rozzaaq (Maha Pemberi rezqi),
+76. Dzul Quwwah (Maha Memilki Kekuatan), 77. Al-Matiin (Maha Kokoh), 78.
+Al-Qooim (Maha Berdiri sendiri), 79. Ad-Daaim (Maha Kekal), 80. Al-Haafidh
+(Maha Penjaga), 81. Al-Wakiil (Maha Melindungi), 82. Al-Faathir (Maha
+Pencipta), 83. As-Saami' (Maha Mendengar), 84. Al-Mu'thii (Maha Memberi), 85.
+Al-Muhyii (Maha Menghidupkan), 86. Al-Mumiit (Maha Mematikan), 87. Al-Maani'
+(Maha Pencegah), 88. Al-Jaami' (Maha Mengumpulkan), 89. Al-Haadii (Maha Pemberi
+petunjuk), 90. Al-Kaafii (Maha Pemberi kecukupan), 91. Al-Abad (Maha Kekal),
+92. Al-'Aalim (Maha Mengetahui), 93. Ash-Shoodiq (Maha Benar), 94. An-Nuur
+(Maha Pemilik cahaya), 95. Al-Muniir (Maha Pemberi cahaya), 96. At-Taamm (Maha
+Sempurna), 97. Al-Qoodir (Maha Kuasa), 98. Al-Witr (Maha Ganjil), 99.
+Al-Ahadush Shomad (Maha Esa dan Tempat bergantung), yang tidak berputra dan
+tidak dilahirkan, dan tidak ada satupun yang setara dengan Dia"</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">. [HR. Ibnu Majah juz
+2, hal. 1269, no. 3861, dla'if karena dalam sanadnya ada perawi bernama 'Abdul
+Malik bin Muhammad Ash-Shan'aniy]<span lang=AR-SA dir=rtl></span></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Keterangan
+:</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; mso-pagination: none"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'">Kami tidak menemukan hadits yang betul-betul
+shahih yang menerangkan secara terperinci tentang Al-Asmaaul Husnaa ini. Adapun
+hadits-hadits tentang Al-Asmaaul Husnaa, yang menerangkan secara terperinci
+yang paling kuat adalah hadits yang diriwayatkan oleh Tirmidzi.</span></p>
+
+<p class=MsoNormal style="unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">Walloohu a'lam</span></i><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">.</span></p>
+
+<p class=MsoNormal style="unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify"><span
+ style="FONT-SIZE: 11pt; FONT-FAMILY: 'Arial','sans-serif'">&nbsp;</span></p>
+
+<p class=MsoNormal align=right style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: right"><span style="FONT-SIZE:
+ 11pt; FONT-FAMILY: 'Arial','sans-serif'">Bersambung……..</span></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>

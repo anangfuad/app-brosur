@@ -1,0 +1,826 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1256">
+<meta name=ProgId content=Word.Document><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:"Traditional Arabic";
+	panose-1:2 1 0 0 0 0 0 0 0 0;
+	mso-font-charset:178;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:8193 0 0 0 64 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:11.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:20.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-fareast-language:ZH-CN;
+	font-weight:normal;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:8.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	color:white;
+	mso-fareast-language:ZH-CN;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:18.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-link:"Body Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-link:"Body Text Indent Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	text-indent:-14.2pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-link:"Body Text 2 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;
+	font-weight:bold;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{mso-style-noshow:yes;
+	mso-style-link:"Body Text 3 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-link:"Body Text Indent 2 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:kashida;
+	text-kashida:0%;
+	text-indent:14.2pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	color:black;
+	mso-bidi-font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:Header;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:Footer;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.BodyText3Char
+	{mso-style-name:"Body Text 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Body Text 3";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:8.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	color:white;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Body Text";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Body Text 2";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";
+	font-weight:bold;}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Body Text Indent";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:19.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Body Text Indent 2";
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Traditional Arabic";}
+ /* Page Definitions */
+ 
+
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+<style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+    overflow: auto;
+}
+
+#winchm_template_content{
+
+	margin: 0px;
+	padding: 15px;
+	width: 100%;
+}
+a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BD8F49;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #666666}
+</style>
+</head>
+
+<body>
+<div id="winchm_template_content">
+  <div align="center"><IMG border=0 align=top src="../other_file/image/kop.gif" width=518 height=103>  </div>
+<table width="100%" align="center" bgcolor="#000000">
+  <tr>
+        <td><div align="center" class="style8"><FONT size=2> 
+       Jl. Ronggowarsito No. 111A Surakarta 57131, Telp (0271) 663299, Fax 
+      (0271) 663977</FONT>    
+               </div></td>
+      </tr>
+    </table>
+  <div align="center">KHUSUS UNTUK PARA SISWA/PESERTA</div>
+<hr>
+	
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: center"><span style="FONT-SIZE: 10pt; mso-bidi-font-family: Arial">
+  </span><span style="FONT-SIZE: 10pt; mso-bidi-font-family: Arial">Ahad,
+06 Mei 2012/</span><span style="FONT-SIZE:
+ 10pt; mso-bidi-font-family: Arial; mso-bidi-font-size: 24.0pt; mso-fareast-language: ZH-CN">14</span><span
+ style="FONT-SIZE: 10pt; mso-bidi-font-family: Arial; mso-fareast-language: ZH-CN">
+</span><span style="FONT-SIZE: 10pt; mso-bidi-font-family: Arial">Jumadits
+Tsaniyah 1433 <span style="mso-spacerun: yes">&nbsp;</span><span
+ style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span><span
+ style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span><span
+ style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+ style="mso-spacerun: yes">&nbsp;&nbsp;</span>Brosur No. : 1599/16</span><span
+
+ style="FONT-SIZE: 10pt; mso-bidi-font-family: Arial; mso-bidi-font-size: 24.0pt; mso-fareast-language: ZH-CN">3</span><span style="FONT-SIZE:
+ 10pt; mso-bidi-font-family: Arial; mso-fareast-language: ZH-CN">9/S</span><span style="FONT-SIZE:
+ 10pt; mso-bidi-font-family: Arial">I<span lang=AR-SA dir=rtl>
+
+</span></span></p>
+
+<p class=MsoNormal align=center style="unicode-bidi:
+
+ embed; DIRECTION: ltr; TEXT-ALIGN: center; MARGIN: 6pt 0cm"><span style="FONT-SIZE:
+ 16pt; mso-bidi-font-family: Arial; mso-bidi-font-size: 24.0pt">Tarikh Al-Khulafaaur Raasyidiin (ke-15)</span></p>
+
+<p class=MsoNormal align=center style="MARGIN-BOTTOM:
+
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: center; TEXT-AUTOSPACE: ; mso-layout-grid-align: none; punctuation-wrap: simple"><b><span style="mso-bidi-font-family: Arial">Khalifah
+Abu Bakar Ash-Shiddiq (15)</span></b><b><span style="mso-bidi-font-family:
+ Arial; mso-bidi-font-size: 22.0pt"></span></b></p>
+
+<p class=MsoNormal style="unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; MARGIN: 0cm 0cm 6pt 21.3pt; TEXT-AUTOSPACE: ; TEXT-INDENT: -21.3pt; mso-layout-grid-align: none; punctuation-wrap: simple"><b><span style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">28.
+Kemenangan kaum muslimin dan kekalahan kaum murtad di Bahrain.</span></b></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none; punctuation-wrap: simple"><span style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudian
+datanglah pasukan kaum muslimin di bawah pimpinan Al-'Alaa' bin Hadlramiy yang
+dikirim oleh Khalifah Abu Bakar Ash-Shiddiiq untuk membebaskan kota Juwaatsaa
+dari kepungan orang-orang murtad. Ketika mendekati Bahrain pasukan Al-'Alaa'
+telah diperkuat dengan pasukan Tsumamah bin Utsaal.</span></p>
+
+<p class=MsoNormal style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none; punctuation-wrap: simple"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Di dalam kitab Al-Bidaayah
+wan Nihaayah disebutkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">لَمَّا اقْتَرَبَ
+مِنْ جُيُوْشِ الْمُرْتَدَّةِ وَقَدْ حَشَدُوْا وَجَمَعُوْا خَلْقًا عَظِيْمًا نَزَلَ
+وَنَزَلُوْا، وَبَاتُوْا مُتَجَاوِرِيْنَ فِي الْمَنَازِلِ. فَبَيْنَمَا الْمُسْلِمُوْنَ
+فِي اللَّيْلِ اِذْ سَمِعَ الْعَلاَءُ اَصْوَاتًا عَالِيَةً فِي جَيْشِ الْمُرْتَدّيْنَ،
+فَقَالَ: مَنْ رَجُلٌ يَكْشِفُ لَنَا خَبَرَ هؤُلاَءِِ؟ فَقَامَ عَبْدُ اللهِ بْنُ
+حَذْفٍ فَدَخَلَ فِيْهِمْ.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Ketika Al-'Alaa'
+bin Hadlramiy mendekati pasukan orang-orang yang murtad, sedangkan mereka telah
+mengumpulkan personil yang banyak sekali, lalu Al-'Alaa' memberhentikan
+pasukannya. Padahal musuh juga berhenti di dekatnya. Mereka bermalam di tempat
+yang saling berdekatan. Pada suatu malam Al-'Alaa' mendengar suara hiruk pikuk
+dari pasukan kaum murtad, maka ia berkata, "Siapa diantara kalian yang
+siap untuk mencari informasi tentang mereka ?". Maka bangkitlah 'Abdullah
+bin Hadzaf, lalu dia berjalan memasuki sarang musuh.</span><span
+
+ style="FONT-SIZE: 24pt; FONT-FAMILY: 'Calibri','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'"></span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">فَوَجَدَهُمْ سُكَارَى
+لاَ يَعْقِلُوْنَ مِنَ الشَّرَابِ. فَرَجَعَ اِلَيْهِ فَاَخْبَرَهُ. فَرَكِبَ الْعَلاَءُ
+مِنْ فَوْرِهِ وَ الْجَيْشُ مَعَهُ فَكَبَسُوْا اُولئِكَ فَقَتَلُوْهُم قَتْلاً عَظِيْمًا،
+وَقَلَّ مَنْ هَرَبَ مِنْهُمْ، وَاسْتَوْلَى عَلَى جَمِيْعِ اَمْوَالِهِمْ وَحَوَاصِلِهِمْ
+وَ اَثْقَالِهِمْ، فَكَانَتْ غَنِيْمَةً عَظِيْمَةً جَسِيْمَةً.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Setelah 'Abdullah
+bin Hadzaf matuk kepada mereka, ternyata ia mendapati musuh dalam keadaan
+mabuk, mereka tidak sadar karena pengaruh minuman keras. Kemudian 'Abdullah
+segera kembali dan memberitahukan hal itu kepada Al-'Alaa'. Maka Al-'Alaa' segera
+menaiki kudanya beserta pasukannya maju menyerang musuh. Maka pada malam itu
+juga mereka banyak membunuh musuh, dan sedikit sekali yang bisa melarikan diri
+dari mereka. Dan pasukan Islam berhasil menguasai semua harta musuh, hasil bumi
+maupun perbekalan mereka. Dan itu merupakan harta rampasan perang yang banyak
+sekali.</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-pagination: none; mso-layout-grid-align: none"><span lang=AR-SA
+ style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">وَ كَانَ الْحُطَمُ بْنُ ضُبَيْعَةَ اَخُوْ بَنِي قَيْسِ بْنِ
+ثَعْلَبَةَ مِنْ سَادَاتِ الْقَوْمِ نَائِمًا، فَقَامَ دَهْشًا حِيْنَ اقْتَحَمَ الْمُسْلِمُوْنَ
+عَلَيْهِمْ فَرَكِبَ جَوَادَهُ فَانْقَطَعَ رِكَابُهُ فَجَعَلَ يَقُوْلُ: مَنْ يُصْلِحُ
+لِي رِكَابِيْ ؟ فَجَاءَ رَجُلٌ مِنَ الْمُسْلِمِيْنَ فِي اللَّيْلِ فَقَالَ: اَنَا
+اُصْلِحُهَا لَكَ، اِرْفَعْ رِجْلَكَ. فَلَمَّا رَفَعَهَا ضَرَبَهُ بِالسَّيْفِ فَقَطَعَهَا
+مَعَ قَدَمِهِ، فَقَالَ لَهُ: اَجْهِزْ عَلَيَّ. فَقَالَ: لاَ اَفْعَلُ. فَوَقَعَ صَرِيْعًا.
+كُلَّمَا مَرَّ بِهِ اَحَدٌ يَسْأَلُهُ اَنْ يَقْتُلَهُ، فَيِأْبَى، حَتَّى مَرَّ بِهِ
+قَيْسُ بْنُ عَاصِمٍ، فَقَالَ لَهُ: اَنَا الْحُطَمُ فَاقْتُلْنِي! فَقَتَلَهُ. فَلَمَّا
+وَجَدَ رِجْلَهُ مَقْطُوْعَةً نَدِمَ عَلَى قَتْلِهِ وَقَالَ: وَ اسُوَأْتَاهْ، لَوْ
+اَعْلَمُ مَا بِهِ لَمْ اُحَرّكْهُ.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Tersebutlah bahwa
+Al-Hutham bin Dlubai'ah saudara Bani Qais bin Tsa'labah termasuk tokoh kaumnya,
+pada waktu itu ia sedang tidur. Ketika kaum muslimin menyerbu mereka, ia
+terbangun dalam keadaan terkejut dan langsung melompat ke atas kudanya, namun
+sayang tempat pijakannya terputus, maka dia berkata, "Siapa yang bisa
+memperbaiki tempat pijakanku ini ?". Lalu datanglah seorang dari tentara
+kaum muslimin pada malam itu dan berkata, "Aku bisa memperbaikinya
+untukmu, angkatlah kakimu". Ketika ia mengangkat kakinya, maka seketika
+itu tentara Islam tersebut memenggal kakinya hingga terputus bersama tapak
+kakinya, lalu dia berteriak, "Bunuhlah saja diriku !", lalu dijawab
+oleh tentara Islam tersebut, "Tidak, aku tidak mau". Akhirnya ia
+jatuh tersungkur. Setiap kali ada orang yang melewatinya, ia meminta supaya
+membunuhnya. Namun orang-orang tidak mau membunuhnya, sehingga Qais bin 'Ashim
+melewatinya, maka ia berkata kepadanya, "Aku adalah Hutham, maka bunuhlah
+aku". Maka Qais pun membunuhnya. Ketika Qais melihat bahwa kakinya telah
+terpotong, maka dia merasa menyesal karena telah membunuhnya, dan ia berkata,
+"Oh, alangkah buruknya, seandainya aku mengetahui apa yang menimpamu,
+pasti engkau tidak akan kusentuh".</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-pagination: none; mso-layout-grid-align: none"><span
+ lang=AR-SA style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">ثُمَّ رَكِبَ الْمُسْلِمُوْنَ فِي آثَارِ الْمُنْهَزِمِيْنَ،
+يَقْتُلُوْنَهُمْ بِكُلّ مِرْصَدٍ وَ طَرِيْقٍ، وَ ذَهَبَ مَنْ فَرَّ مِنْهُمْ اَوْ
+اَكْثَرُهُمْ فِي الْبَحْرِ اِلىَ دَارَيْنِ رَكِبُوْا اِلَيْهَا السُّفُنَ. </span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudian kaum
+muslimin mengejar musuh yang melarikan diri. Kaum muslimin berhasil membunuh
+mereka di berbagai tempat dan jalan. Dan kebanyakan diantara mereka melarikan
+diri menuju laut menyeberang ke Darain. Mereka naik perahu, lari ke Darain.</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA
+ style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">ثُمَّ شَرَعَ الْعَلاَءُ بْنُ الْحَضْرَمِيّ فيِ قَسْمِ الْغَنِيْمَةِ.
+وَ نَقَلَ اْلاَثْقَالَ وَ فَرَغَ مِنْ ذلِكَ وَ قَالَ لِلْمُسْلِمِيْنَ: اِذْهَبُوْا
+بِنَا اِلىَ دَارَيْنِ لِنَغْزُوَ مَنْ بِهَا مِنَ اْلاَعْدَاءِ، فَاَجَابُوْا اِلىَ
+ذلِكَ سَرِيْعًا، فَسَارَ بِهِمْ حَتَّى اَتَى سَاحِلَ الْبَحْرِ لِيَرْكَبُوْا فِي
+السُّفُنِ، فَرَأَى اَنَّ الشُّقَّةَ بَعِيْدَةٌ لاَ يَصِلُوْنَ اِلَيْهِمْ فِي السُّفُنِ
+حَتَّى يَذْهَبَ اَعْدَاءُ اللهِ.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudian Al-'Alaa'
+bin Hadlramiy membagi harta rampasan perang. Setelah pembagian ghanimah selesai
+dan barang-barang telah dinaikkan ke kendaraan, lalu Al-'Alaa' berkata kepada
+tentaranya, "Mari kita berangkat menuju Darain untuk memerangi musuh yang
+berada di sana!". Maka semua pasukan mematuhi perintahnya. Mereka mulai
+bergerak sehingga sampai di tepi pantai dan bersiap-siap untuk mengejar perahu
+musuh. Namun jarak antara mereka dengan perahu musuh cukup jauh yang tidak
+mungkin terkejar, hingga musuh-musuh Allah itu berhasil melarikan diri.</span><span
+
+ style="FONT-SIZE: 24pt; FONT-FAMILY: 'Calibri','sans-serif'; mso-bidi-font-family: 'Traditional Arabic'"></span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA
+ style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">فَاقْتَحَمَ الْبَحْرَ بِفَرَسِهِ وَ هُوَ يَقُوْلُ: يَا اَرْحَمَ
+الرَّاحِمِيْنَ، يَا حَكِيْمُ يَا كَرِيْمُ، يَا اَحَدُ يَا صَمَدُ، يَا حَيُّ يَا
+مُحْيِ، يَا قَيُّوْمُ يَا ذَا الْجَلاَلِ وَ اْلاِكْرَامِ، لاَ اِلهَ اِلاَّ اَنْتَ
+يَا رَبَّنَا. وَ اَمَرَ الْجَيْشَ اَنْ يَقُوْلُوْا ذلِكَ وَ يَقْتَحِمُوْا، فَفَعَلُوْا
+ذلِكَ فَاَجَازَ بِهِمُ الْخَلِيْجَ بِاِذْنِ اللهِ يَمْشُوْنَ عَلَى مِثْلِ رَمْلَةٍ
+دَمْثَةٍ فَوْقَهَا مَاءٌ لاَ يَغْمُرُ اَخْفَافَ اْلاِبِلِ وَلاَ يَصِلُ اِلىَ رُكَبِ
+الْخَيْلِ، وَ مَسِيْرَتُهُ لِلسُّفُنِ يَوْمٌ وَ لَيْلَةٌ، فَقَطَعَهُ اِلَى السَّاحِلِ
+اْلآخَرِ، فَقَاتَلَ عَدُوَّهُ وَ قَهَّرَهُمْ وَ احْتَازَ غَنَائِمَهُمْ.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudian Al-'Alaa'
+segera masuk ke laut dengan kudanya sambil berdo'a, "Ya Allah Yang Maha
+Penyayang diantara para penyayang, ya Allah Yang Maha Bijaksana, ya Allah yang
+Maha Mulia, ya Allah Yang Maha Esa, ya Allah Tempat bergantung, ya Allah Yang
+Maha Hidup, ya Allah Yang Maha Menghidupkan, ya Allah Yang Maha Berdiri
+sendiri, ya Allah Yang memiliki Keagungan dan Kemuliaan, tidak ada Tuhan selain
+Engkau, wahai Tuhan kami".</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Dan ia
+memerintahkan tentaranya untuk mengucapkan do'a yang sama dan langsung masuk ke
+laut bersama kuda mereka. Dan pasukan pun melakukannya. Akhirnya dengan idzin
+Allah mereka dapat menyeberangi teluk tersebut dengan mengendarai kuda, mereka
+berjalan seperti berjalan di atas padang pasir yang datar yang di atasnya ada
+airnya, namun tidak sampai sebatas kaki unta dan tidak sampai sebatas lutut
+kuda. Padahal perjalanan ini jika ditempuh dengan perahu memakan waktu sehari-semalam,
+namun pasukan muslimin berhasil sampai di tepi pantai seberang. Mereka lalu
+memerangi musuh hingga mengalahkan mereka dan mengambil harta rampasan perang
+mereka.</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-pagination: none; mso-layout-grid-align: none"><span
+ lang=AR-SA style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">ثُمَّ رَجَعَ فَقَطَعَهُ اِلىَ الْجَانِبِ اْلآخَرِ فَعَادَ
+اِلىَ مَوْضِعِهِ اْلاَوَّلِ، وَ ذلِكَ كُلُّهُ فِي يَوْمٍ، وَلَمْ يَتْرُكْ مِنَ الْعَدُوّ
+مُخْبِرًا، وَ اسْتَاقَ الذَّرَارِيَ وَ اْلاَنْعَامَ وَ اْلاَمْوَالَ، وَلَمْ يَفْقِدُ
+الْمُسْلِمُوْنَ فِي الْبَحْرِ شَيْئًا سِوَى عُلَيْقَةَ فَرَسٌ لِرَجُلٍ مِنَ الْمُسْلِمِيْنَ
+وَمَعَ هذَا رَجَعَ الْعَلاَءُ فَجَاءَهُ بِهَا، ثُمَّ قَسَمَ غَنَائِمَ الْمُسْلِمِيْنَ
+فِيْهِمْ، فَاَصَابَ الْفَارِسُ اَلْفَيْنِ وَ الرَّاجِلُ اَلْفًا مَعَ كَثْرَةِ الْجَيْشِ.</span><span
+ lang=AR-SA style
+="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-hansi-font-family: Calibri; mso-ascii-font-family: Calibri"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudan mereka
+kembali lagi ke sisi pantai pertama. Perjalanan pulang pergi mereka
+menyeberangi teluk tersebut hanya memakan waktu satu hari saja. Dan Al-'Alaa'
+tidak menyisakan seorang musuhpun untuk membawa berita.</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudian Al-'Alaa'
+mulai menggiring para tawanan anak-anak dan wanita, binatang ternak dan harta
+mereka. Tidak seorangpun dari kaum muslimin yang kehilangan di laut tersebut kecuali
+seekor kuda yang bernama 'Ulaiqah. Namun Al-'Alaa' berhasil membawanya kembali.
+Kemudian Al-'Alaa' membagi-bagikan harta rampasan perang kepada pasukannya.
+Setiap penunggang kuda berhasil mendapatkan bagian 2.000 dinar, dan setiap
+pejalan kaki mendapatkan bagian 1.000 dinar, padahal pasukannya juga banyak.
+[Al-Bidaayah wan Nihaayah juz 6, hal. 721] </span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Tentang Al-'Alaa'
+menyeberangi lautan ini, Ibnul Atsiir dalam kitabnya Al-Kaamil fit Taariikh
+juga menyebutkan sebagai berikut :</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; mso-pagination: none"><span lang=AR-SA style="FONT-SIZE: 24pt;
+ FONT-FAMILY: 'Traditional Arabic'; COLOR: windowtext; mso-ascii-font-family: 'Traditional Arabic'">وَقَالَ لَهُمْ: قَدْ
+اَرَاكُمُ اللهُ مِنْ ايتِهِ فِي الْبَرّ لَتَعْتَبِرُوْا بِهَا فِي الْبَحْرِِ، فَانْهَضُوْا
+اِلىَ عَدُوّكُمْ وَاسْتَعْرِضُوا الْبَحْرَ. وَ ارْتَحَلَ وَ ارْتَحَلُوْا حَتَّى
+اقْتَحَمَ الْبَحْرَ عَلَى الْخَيْلِ وَ اْلاِبِلِ وَ الْحَمِيْرِ وَ غَيْرِ ذلِكَ،
+وَ فِيْهِمُ الرَّاجِلُ، وَ دَعَا وَ دَعَوْا. وَ كَانَ مِنْ دُعَائِهِمْ: يَا اَرْحَمَ
+الرَّاحِمِيْنَ، يَا كَرِيْمُ، يَا حَلِيْمُ، يَا اَحَدُ، يَا صَمَدُ، يَا حَيُّ، يَا
+مُحْيِي الْمَوْتَى، يَا حَيُّ يَا قَيُّوْمُ، لاَ اِلهَ اِلاَّ اَنْتَ يَا رَبَّنَا!
+فَاجْتَازَوْا ذلِكَ الْخَلِيْجَ بِاِذْنِ اللهِ يَمْشُوْنَ عَلَى مِثْلِ رَمْلَةٍ
+فَوْقَهَا مَاءٌ يَغْمُرُ اَخْفَافَ اْلاِبِلِ.</span><span lang=AR-SA
+ style="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; COLOR: windowtext"></span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Dan Al-'Alaa'
+berkata, "Allah telah memperlihatkan kepada kalian tanda-tanda
+kekuasaan-Nya di darat, maka hendaklah kalian mengambil pelajaran dengannya di
+laut, maka kejarlah musuh kalian, dan seberangilah lautan itu. Kemudian
+Al-'Alaa' berangkat dengan naik kuda menyeberangi lautan. Dan pasukannya pun
+mengikutinya, sehingga mereka berhasil menyeberangi lautan, ada yang naik kuda,
+ada yang naik unta, ada yang naik himar dan ada pula yang berjalan kaki. Dan
+ketika Al-'Alaa' berdoa, merekapun turut berdo'a. Dan diantara do'a mereka
+ialah (yang artinya), "Ya Allah Yang Maha Penyayang diantara para
+penyayang, ya ya Allah yang Maha Mulia, ya Allah Yang Maha Penyantun, ya Allah
+Yang Maha Esa, ya Allah Tempat bergantung, ya Allah Yang Maha Hidup, ya Allah
+Yang Menghidupkan orang-orang yang mati, ya Allah Yang Maha Hidup dan Berdiri
+sendiri, tidak ada Tuhan selain Engkau, wahai Tuhan kami".</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Dan dengan idzin
+Allah mereka dapat menyeberangi teluk tersebut seperti berjalan di atas padang
+pasir yang di atasnya ada air, yang hanya mencapai kaki unta. [Al-Kaamil fit
+Taariikh juz 2, hal. 227]</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-pagination: none; mso-layout-grid-align: none"><span
+ lang=AR-SA style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'">وَكَتَبَ اِلَى الصّدّيْقِ فَاَعْلَمَهُ بِذلِكَ، فَبَعَثَ الصّدّيْقُ
+يَشْكُرُهُ عَلَى مَا صَنَعَ، وَقَدْ قَالَ رَجُلٌ مِنَ الْمُسْلِمِيْنَ فِي مُرُوْرِهِمْ
+فِي الْبَحْرِ، وَهُوَ عَفِيْفُ بْنُ الْمُنْذِرِ:</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'"><span
+ style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>* اَلَمْ تَرَ اَنَّ اللهَ ذَلَّلَ بَحْرَهُ</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'"><span
+ style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*
+وَ اَنْزَلَ بِالْكُفَّارِ اِحْدَى الْجَلاَئِلِ</span></p>
+
+<p class=MsoNormal dir=rtl style="TEXT-ALIGN:
+ justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA style="FONT-SIZE:
+ 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'"><span
+ style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>* دَعَوْنَا اِلىَ شِقّ الْبِحَارِ</span></p>
+
+<p class=MsoNormal dir=rtl style="MARGIN-BOTTOM:
+ 6pt; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span lang=AR-SA
+ style
+ ="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'; mso-ascii-font-family: 'Traditional Arabic'"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+ style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>* فَجَاءَنَا بِاَعْجَبَ مِنْ فَلَقِ الْبِحَارِ
+اْلاَوَائِلِ</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kemudian Al-'Alaa'
+mengirim surat kepada Khalifah Abu Bakar Ash-Shiddiiq memberitahukan kemenangan
+ini. Lalu Abu Bakar Ash-Shiddiiq mengirim utusan sebagai tanda terima kasihnya
+kepada Al-'Alaa' atas apa yang telah ia capai. Dan salah satu diantara pasukan
+muslimin, yaitu 'Afiif bin Mundzir membuat sya'ir yang artinya :</span></p>
+
+<p class=MsoNormal style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><i><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Tidakkah kamu
+lihat bagaimana Allah telah menaklukkan laut-Nya,</span></i></p>
+
+<p class=MsoNormal style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><i><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Dan menurunkan
+kepada orang-orang kafir hukuman-Nya,</span></i></p>
+
+<p class=MsoNormal style="unicode-bidi:
+ embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><i><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Kami berdo'a
+kepada Tuhan yang pernah membelah lautan,</span></i></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><i><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Maka Dia
+mendatangkan kepada kami keajaiban yang lebih hebat dari yang terdahulu</span></i><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">. [Al-Bidaayah wan
+Nihaayah juz 6, hal. 721]</span></p>
+
+<p class=MsoNormal style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: justify; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><b><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Walloohu a'lam</span></b><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">.</span></p>
+
+<p class=MsoNormal align=right style="MARGIN-BOTTOM:
+ 6pt; unicode-bidi: embed; DIRECTION: ltr; TEXT-ALIGN: right; TEXT-AUTOSPACE: ; mso-layout-grid-align: none"><span
+ style="mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt">Bersambung…….</span><span
+ lang=AR-SA dir=rtl style="FONT-SIZE: 24pt; FONT-FAMILY: 'Traditional Arabic'"></span></p>
+
+</div>
+
+<hr>
+ 
+<P></P>
+    <div align="right"><font face="Arial" size="1"><span class="style10">&nbsp; Copyright (c) 2015</span> <a href="http://www.mta.or.id/">Majlis Tafsir Al-Qur'an (MTA)</a> <span class="style10">Surakarta</span></font></div>
+</div>
+
+</body>
+
+</html>
