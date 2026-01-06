@@ -5,8 +5,31 @@ from fastapi.staticfiles import StaticFiles
 import sqlite3
 import os
 
+# =========================
+# APP
+# =========================
 app = FastAPI(title="App Brosur v0.4")
-app.mount("/static", StaticFiles(directory="static", html=True), name="static")
+
+# =========================
+# BASE PATH (AMAN LINTAS OS)
+# =========================
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# =========================
+# STATIC FILES
+# =========================
+STATIC_DIR = os.path.join(BASE_DIR, "backend", "static")
+
+if os.path.isdir(STATIC_DIR):
+    app.mount(
+        "/static",
+        StaticFiles(directory=STATIC_DIR, html=True),
+        name="static"
+    )
+else:
+    # optional log biar nggak crash di production
+    print(f"[WARN] Static directory not found: {STATIC_DIR}")
+
 # =========================
 # CORS
 # =========================
@@ -18,9 +41,8 @@ app.add_middleware(
 )
 
 # =========================
-# PATH & DB
+# DATABASE
 # =========================
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(BASE_DIR, "dalil.db")
 
 
@@ -30,6 +52,9 @@ def get_conn():
     return conn
 
 
+# =========================
+# ROOT
+# =========================
 @app.get("/")
 def root():
     return {"status": "ok", "version": "v0.4"}
@@ -63,10 +88,7 @@ def make_snippet(text: str, keywords, radius=150):
 
 
 # =========================
-# 🔍 SEARCH (multi kata / kalimat)
-# - basis: isi_indo
-# - ranking: relevansi → tahun
-# - hasil: snippet kontekstual
+# 🔍 SEARCH (isi terjemah)
 # =========================
 @app.get("/search/indo")
 def search_indo(q: str = Query(..., min_length=2)):
@@ -118,9 +140,7 @@ def search_alias(q: str = Query(..., min_length=2)):
 
 
 # =========================
-# 📄 DETAIL DALIL
-# - HTML ASLI
-# - encoding Windows-1256 AMAN
+# 📄 DETAIL DALIL (HTML ASLI)
 # =========================
 @app.get("/dalil/{dalil_id}")
 def dalil_detail(dalil_id: int):
@@ -142,7 +162,7 @@ def dalil_detail(dalil_id: int):
     if not os.path.exists(html_path):
         raise HTTPException(status_code=404, detail="File HTML tidak ditemukan")
 
-    # 🔥 PENTING: baca sebagai binary (JANGAN decode)
+    # Baca binary (AMAN encoding Arab)
     with open(html_path, "rb") as f:
         content = f.read()
 
