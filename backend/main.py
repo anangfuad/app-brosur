@@ -23,7 +23,7 @@ STATIC_DIR = os.path.join(BASE_DIR, "backend", "static")
 
 if os.path.isdir(STATIC_DIR):
     app.mount(
-        "/",
+        "/static",
         StaticFiles(directory=STATIC_DIR, html=True),
         name="static"
     )
