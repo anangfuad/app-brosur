@@ -149,3 +149,89 @@ mark.hl.active {
   background: #39ff14; /* hijau stabilo */
   color: black;
 }
+
+/* ===================================================
+   MOBILE RESPONSIVE FIX — APP-BROSUR v1
+   Aman untuk desktop (hanya aktif < 768px)
+   =================================================== */
+@media (max-width: 768px) {
+  /* ===== Base ===== */
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* ===== Container ===== */
+  .container {
+    max-width: 100%;
+    padding: 10px 12px;
+  }
+
+  /* ===== Header / Title ===== */
+  h1,
+  h2,
+  h3 {
+    line-height: 1.3;
+  }
+
+  /* ===== Search Input ===== */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  /* ===== Result Cards ===== */
+  .result-item {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .result-item h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .result-item p {
+    font-size: 15px;
+  }
+
+  /* ===== Back Button ===== */
+  .back-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* ===== Highlight Navigation ===== */
+  .highlight-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    padding: 8px 6px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .highlight-nav button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  /* ===== Iframe Dalil ===== */
+  iframe {
+    width: 100%;
+    height: calc(100vh - 150px);
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+}
