@@ -178,3 +178,115 @@ mark.hl.active {
     width: 100%;
   }
 }
+
+/* =========================
+   MODE GABUT - BACA BROSUR
+========================= */
+
+/* Wrapper section */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Dropdown Tahun */
+#tahunSelect {
+  width: 260px;
+  max-width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+#tahunSelect:focus {
+  border-color: #39ff14;
+}
+
+/* List Brosur */
+#brosurList ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  max-width: 720px;
+}
+
+/* Item brosur */
+#brosurList li {
+  margin-bottom: 8px;
+}
+
+/* Link judul brosur */
+#brosurList a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.4;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Hover efek */
+#brosurList a:hover {
+  background: #f6fff3;
+  border-color: #39ff14;
+  transform: translateY(-1px);
+}
+
+/* Mobile tuning */
+@media (max-width: 768px) {
+  #tahunSelect {
+    width: 100%;
+  }
+
+  #brosurList a {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+/* =========================
+   LIST BROSUR (CARD)
+========================= */
+.brosur-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.brosur-card {
+  padding: 14px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.brosur-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.brosur-judul {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.brosur-meta {
+  font-size: 12px;
+  color: #777;
+}

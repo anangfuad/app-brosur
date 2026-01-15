@@ -10,6 +10,9 @@
   <body>
     <h1>Pencarian Dalil</h1>
 
+    <!-- ===================== -->
+    <!-- SEARCH (TETAP) -->
+    <!-- ===================== -->
     <input
       type="text"
       id="keyword"
@@ -18,6 +21,30 @@
     />
 
     <div id="hasil"></div>
+
+    <hr />
+
+    <!-- ===================== -->
+    <!-- MODE GABUT -->
+    <!-- ===================== -->
+    <h2>📚 BACA BROSUR</h2>
+
+    <div class="brosur-filter">
+      <select id="tahunSelect" onchange="renderBrosurByTahun()">
+        <option value="">-- Pilih Tahun --</option>
+      </select>
+    </div>
+
+    <div id="brosurList" class="brosur-list"></div>
+
+    <!-- ===================== -->
+    <!-- VIEW BROSUR -->
+    <!-- ===================== -->
+    <button id="btnBack" onclick="kembaliKeBrosur()" style="display: none">
+      ← Kembali ke Daftar Brosur
+    </button>
+
+    <iframe id="detailFrame" style="display: none"></iframe>
 
     <script src="app.js"></script>
   </body>

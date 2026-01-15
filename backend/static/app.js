@@ -1,7 +1,7 @@
 // =========================
 // GLOBAL STATE
 // =========================
-const API = ""; // 🔥 PENTING: relative path
+const API = "";
 
 let timer = null;
 let lastKeyword = "";
@@ -38,7 +38,6 @@ async function cari() {
 
   try {
     const res = await fetch(`${API}/search/indo?q=${encodeURIComponent(q)}`);
-
     if (!res.ok) throw new Error("API error");
 
     const data = await res.json();
@@ -69,7 +68,7 @@ async function cari() {
 }
 
 // =========================
-// DETAIL VIEW
+// DETAIL VIEW (SEARCH MODE)
 // =========================
 function bukaDetail(id) {
   const hasilDiv = document.getElementById("hasil");
@@ -82,6 +81,7 @@ function bukaDetail(id) {
     </div>
 
     <button onclick="kembali()">← Kembali ke hasil</button>
+
     <iframe id="detailFrame" src="${API}/dalil/${id}"></iframe>
   `;
 
@@ -94,7 +94,7 @@ function kembali() {
 }
 
 // =========================
-// 🔥 HIGHLIGHT DI IFRAME
+// HIGHLIGHT DI IFRAME
 // =========================
 function highlightInIframe(keyword) {
   const iframe = document.getElementById("detailFrame");
@@ -107,17 +107,10 @@ function highlightInIframe(keyword) {
     highlights = [];
     activeIndex = -1;
 
-    // Inject CSS
     const style = doc.createElement("style");
     style.innerHTML = `
-      mark.hl {
-        background: yellow;
-        padding: 0 2px;
-      }
-      mark.hl.active {
-        background: #39ff14;
-        color: black;
-      }
+      mark.hl { background: yellow; }
+      mark.hl.active { background: #39ff14; color: black; }
     `;
     doc.head.appendChild(style);
 
@@ -125,12 +118,11 @@ function highlightInIframe(keyword) {
     const regex = new RegExp(`(${escaped})`, "gi");
 
     const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
-
     const nodes = [];
     let node;
 
     while ((node = walker.nextNode())) {
-      if (/[\u0600-\u06FF]/.test(node.nodeValue)) continue; // skip Arab
+      if (/[\u0600-\u06FF]/.test(node.nodeValue)) continue;
       if (regex.test(node.nodeValue)) nodes.push(node);
     }
 
@@ -157,9 +149,9 @@ function highlightInIframe(keyword) {
 // NAVIGASI HIGHLIGHT
 // =========================
 function setActiveHighlight() {
-  highlights.forEach((el, i) => {
-    el.classList.toggle("active", i === activeIndex);
-  });
+  highlights.forEach((el, i) =>
+    el.classList.toggle("active", i === activeIndex)
+  );
 
   document.getElementById("counter").textContent = `${activeIndex + 1} / ${
     highlights.length
@@ -182,3 +174,115 @@ function prevHighlight() {
   activeIndex = (activeIndex - 1 + highlights.length) % highlights.length;
   setActiveHighlight();
 }
+
+// =========================
+// MODE GABUT - BACA BROSUR
+// =========================
+let brosurData = [];
+let tahunTerakhirDipilih = "";
+
+async function loadBrosur() {
+  const listDiv = document.getElementById("brosurList");
+  const select = document.getElementById("tahunSelect");
+
+  listDiv.innerHTML = "Memuat brosur…";
+  select.innerHTML = `<option value="">-- Pilih Tahun --</option>`;
+
+  try {
+    const res = await fetch(`${API}/brosur`);
+    if (!res.ok) throw new Error("Gagal fetch /brosur");
+
+    brosurData = await res.json();
+
+    if (brosurData.length === 0) {
+      listDiv.innerHTML = "Tidak ada data brosur.";
+      return;
+    }
+
+    const years = [...new Set(brosurData.map((b) => b.tahun))].sort(
+      (a, b) => b - a
+    );
+
+    years.forEach((y) => {
+      const opt = document.createElement("option");
+      opt.value = y;
+      opt.textContent = y;
+      select.appendChild(opt);
+    });
+
+    listDiv.innerHTML = "Silakan pilih tahun.";
+  } catch (err) {
+    console.error(err);
+    listDiv.innerHTML = "Gagal memuat brosur.";
+  }
+}
+
+function renderBrosurByTahun() {
+  const tahun = document.getElementById("tahunSelect").value;
+  tahunTerakhirDipilih = tahun;
+
+  const listDiv = document.getElementById("brosurList");
+
+  if (!tahun) {
+    listDiv.innerHTML = "";
+    return;
+  }
+
+  const filtered = brosurData.filter((b) => String(b.tahun) === tahun);
+
+  listDiv.innerHTML = `
+    <div class="brosur-cards">
+      ${filtered
+        .map(
+          (b) => `
+        <div class="brosur-card"
+             onclick="bukaBrosur(${b.id})">
+          <div class="brosur-judul">
+            ${b.judul || "Tanpa Judul"}
+          </div>
+          <div class="brosur-meta">
+            Tahun ${b.tahun}
+          </div>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+// =========================
+// BUKA BROSUR (IFRAME MODE)
+// =========================
+function bukaBrosur(id) {
+  document.querySelector(".brosur-filter").style.display = "none";
+  document.getElementById("brosurList").style.display = "none";
+
+  const iframe = document.getElementById("detailFrame");
+  iframe.src = `${API}/dalil/${id}`;
+  iframe.style.display = "block";
+
+  document.getElementById("btnBack").style.display = "inline-block";
+}
+
+// =========================
+// KEMBALI KE LIST BROSUR
+// =========================
+function kembaliKeBrosur() {
+  const iframe = document.getElementById("detailFrame");
+  iframe.src = "";
+  iframe.style.display = "none";
+
+  document.querySelector(".brosur-filter").style.display = "block";
+  document.getElementById("brosurList").style.display = "block";
+
+  document.getElementById("btnBack").style.display = "none";
+
+  document.getElementById("tahunSelect").value = tahunTerakhirDipilih;
+  renderBrosurByTahun();
+}
+
+// =========================
+// INIT
+// =========================
+loadBrosur();

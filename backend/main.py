@@ -179,3 +179,37 @@ def dalil_detail(dalil_id: int):
         content=content,
         media_type="text/html; charset=windows-1256"
     )
+
+# =========================
+# 📚 BACA BROSUR (MODE GABUT)
+# =========================
+@app.get("/brosur")
+def list_brosur(tahun: int | None = None):
+    conn = get_conn()
+    cur = conn.cursor()
+
+    if tahun:
+        cur.execute("""
+            SELECT id, judul, tahun
+            FROM dalil_clean
+            WHERE tahun = ?
+            ORDER BY judul ASC
+        """, (tahun,))
+    else:
+        cur.execute("""
+            SELECT id, judul, tahun
+            FROM dalil_clean
+            ORDER BY tahun DESC, judul ASC
+        """)
+
+    rows = cur.fetchall()
+    conn.close()
+
+    return [
+        {
+            "id": r["id"],
+            "judul": r["judul"],
+            "tahun": r["tahun"]
+        }
+        for r in rows
+    ]
