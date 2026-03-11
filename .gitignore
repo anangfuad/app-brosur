@@ -24,3 +24,6 @@ Thumbs.db
 
 # === CHM Source (NOT needed in production) ===
 *.chm
+
+*.db-journal
+dalil_backup_*.db

@@ -140,6 +140,139 @@ def search_alias(q: str = Query(..., min_length=2)):
 
 
 # =========================
+# 🔍 SEARCH V2 (Multi-kata, Konteks, Filter Tahun)
+# =========================
+
+# Kamus Sinonim (Bisa ditambah kapan saja)
+SINONIM = {
+    "ramadan":  ["ramadan", "ramadhan", "ramadlan", "romadhon", "romadhlan"],
+    "ramadhan": ["ramadan", "ramadhan", "ramadlan", "romadhon", "romadhlan"],
+    "ramadlan": ["ramadan", "ramadhan", "ramadlan", "romadhon", "romadhlan"],
+    "shalat":   ["shalat", "sholat", "salat", "solat"],
+    "sholat":   ["shalat", "sholat", "salat", "solat"],
+    "salat":    ["shalat", "sholat", "salat", "solat"],
+    "zakat":    ["zakat", "jakat"],
+    "wudhu":    ["wudhu", "wudlu", "wudu"],
+    "wudlu":    ["wudhu", "wudlu", "wudu"],
+    "hadits":   ["hadits", "hadis", "hadith"],
+    "hadis":    ["hadits", "hadis", "hadith"],
+    "nasihat":  ["nasihat", "nasehat"],
+    "nasehat":  ["nasihat", "nasehat"],
+}
+
+@app.get("/search/v2")
+def search_v2(q: str = Query(..., min_length=2), tahun: int | None = None):
+    conn = get_conn()
+    cur = conn.cursor()
+
+    # Pisahkan kata kunci dan ubah jadi lowercase
+    raw_keywords = q.split()
+    base_keywords = [k.lower() for k in raw_keywords if len(k) > 1]
+    
+    if not base_keywords:
+        return []
+
+    # Ekspansi sinonim
+    expanded_keywords = []
+    for k in base_keywords:
+        if k in SINONIM:
+            expanded_keywords.extend(SINONIM[k])
+        else:
+            expanded_keywords.append(k)
+            
+    # Hapus duplikat dari ekspansi
+    keywords = list(set(expanded_keywords))
+
+    # Bangun query OR untuk membatasi hasil pencarian dari DB
+    or_conditions = []
+    params = []
+    
+    for k in keywords:
+        or_conditions.append("isi_indo LIKE ?")
+        params.append(f"%{k}%")
+        
+    where_clause = " OR ".join(or_conditions)
+    
+    # Filter tahun jika ada
+    if tahun is not None:
+        where_clause = f"({where_clause}) AND tahun = ?"
+        params.append(tahun)
+
+    query = f"""
+        SELECT id, judul, tahun, isi_indo
+        FROM dalil_clean
+        WHERE {where_clause}
+    """
+    
+    cur.execute(query, tuple(params))
+    rows = cur.fetchall()
+    conn.close()
+
+    results = []
+    q_lower = q.lower().strip()
+
+    for r in rows:
+        isi = r["isi_indo"] or ""
+        isi_lower = isi.lower()
+
+        score = 0
+        matches = 0
+
+        # Hitung frekuensi per kata (Layer 3 & 4 base)
+        matched_keywords = []
+        for k in keywords:
+            count = isi_lower.count(k)
+            if count > 0:
+                matched_keywords.append(k)
+                score += count # Skor berdasar frekuensi
+        
+        matches = len(matched_keywords)
+        
+        # Layer 3: Context Match (Skor berdasar kepadatan unik kata yang cocok)
+        score += (matches * 100)
+        
+        # Limit frequency score impact for single word searches
+        if len(base_keywords) == 1:
+            # For single words, cap frequency score so year has more impact
+            score = min(score, 110) # 100 from match + max 10 from freq
+            
+        # Layer 2: AND Match (Semua kata dasar ada, meski terpisah)
+        # Note: we check against base_keywords length, not expanded keywords
+        base_match_count = sum(1 for bk in base_keywords if any(ek in matched_keywords for ek in SINONIM.get(bk, [bk])))
+        if base_match_count == len(base_keywords) and len(base_keywords) > 1:
+            score += 500
+            
+        # Layer 1: Phrase Match (Skor terbesar jika berurutan persis)
+        # Check if any variation of the exact phrase exists
+        if q_lower in isi_lower:
+            score += 2000
+
+        if score > 0:
+            # Gunakan semua keyword untuk snippet agar highligting lebih maksimal
+            snippet = make_snippet(isi, keywords)
+
+            results.append({
+                "id": r["id"],
+                "judul": r["judul"],
+                "tahun": r["tahun"],
+                "preview": snippet,
+                "score": score,
+                "matches": matches
+            })
+
+    # Urutkan berdasar: 
+    # 1. Skor (Phrase > AND > Context)
+    # 2. MATCHES (Berapa kata unik yang kena)
+    # 3. TAHUN (Terbaru di atas)
+    results.sort(
+        key=lambda x: (x["score"] // 100, x["matches"], x["tahun"] or 0, x["score"] % 100),
+        reverse=True
+    )
+
+    return results[:20]
+
+
+# =========================
 # 📄 DETAIL DALIL (HTML ASLI CHM)
 # =========================
 @app.get("/dalil/{dalil_id}")

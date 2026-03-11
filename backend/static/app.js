@@ -19,13 +19,21 @@ function handleInput() {
 
 function highlight(text, keyword) {
   if (!keyword) return text;
-  const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  
+  // Pisahkan kata, hapus spasi ekstra, dan buang kata pendek (< 2 huruf)
+  const keywords = keyword.split(/\s+/).filter(k => k.length > 1);
+  if (!keywords.length) return text;
+
+  // Escape masing-masing kata lalu gabung dengan OR (|)
+  const escaped = keywords.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  
   const regex = new RegExp(`(${escaped})`, "gi");
   return text.replace(regex, "<mark>$1</mark>");
 }
 
 async function cari() {
   const q = document.getElementById("keyword").value.trim();
+  const searchTahun = document.getElementById("searchTahunSelect").value;
   const hasilDiv = document.getElementById("hasil");
 
   if (q.length < 2) {
@@ -37,7 +45,11 @@ async function cari() {
   hasilDiv.innerHTML = "Mencari…";
 
   try {
-    const res = await fetch(`${API}/search/indo?q=${encodeURIComponent(q)}`);
+    let url = `${API}/search/v2?q=${encodeURIComponent(q)}`;
+    if (searchTahun) {
+      url += `&tahun=${searchTahun}`;
+    }
+    const res = await fetch(url);
     if (!res.ok) throw new Error("API error");
 
     const data = await res.json();
@@ -114,7 +126,12 @@ function highlightInIframe(keyword) {
     `;
     doc.head.appendChild(style);
 
-    const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    // Pisahkan kata, hapus spasi ekstra, dan buang kata pendek (< 2 huruf)
+    const keywords = keyword.split(/\s+/).filter(k => k.length > 1);
+    if (!keywords.length) return;
+
+    // Escape masing-masing kata lalu gabung dengan OR (|)
+    const escaped = keywords.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
     const regex = new RegExp(`(${escaped})`, "gi");
 
     const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
@@ -203,11 +220,22 @@ async function loadBrosur() {
       (a, b) => b - a
     );
 
+    const searchSelect = document.getElementById("searchTahunSelect");
+
     years.forEach((y) => {
+      // Untuk menu baca brosur
       const opt = document.createElement("option");
       opt.value = y;
       opt.textContent = y;
       select.appendChild(opt);
+
+      // Untuk menu filter pencarian
+      if (searchSelect) {
+        const optSearch = document.createElement("option");
+        optSearch.value = y;
+        optSearch.textContent = y;
+        searchSelect.appendChild(optSearch);
+      }
     });
 
     listDiv.innerHTML = "Silakan pilih tahun.";

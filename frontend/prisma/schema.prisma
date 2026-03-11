@@ -1,0 +1,20 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_URL") // Disarankan Vercel menggunakan variabel POSTGRES_URL
+}
+
+model Dalil {
+  id        Int     @id @default(autoincrement())
+  judul     String
+  isi_indo  String
+  teks_arab String?
+  html_path String?
+
+  // Indexing isi_indo. Untuk pencarian Full-Text Search (FTS) secara utuh 
+  // jalankan script setup_fts.sql di query Vercel Postgres.
+}
